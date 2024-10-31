@@ -1,3 +1,5 @@
+/*Quando escrevi esse código só eu e deus sabia o que ele fazia, agora só deus sabe.*/
+
 package sample.controladores;
 
 import javafx.fxml.FXML;
