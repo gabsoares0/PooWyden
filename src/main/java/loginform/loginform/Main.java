@@ -9,7 +9,7 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         SceneController.setStage(stage);
-        SceneController.changeScene("/login.fxml"); // Carregar a tela de login
+        SceneController.changeScene("/Login/login.fxml"); // Carregar a tela de login
         stage.setTitle("EN-Fitness");
         stage.setResizable(false);
         stage.show();

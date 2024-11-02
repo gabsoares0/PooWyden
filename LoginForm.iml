@@ -6,7 +6,8 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources/Dashboard/Img" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources/Dashboard/dashboard" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources/Dashboard/values" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/main/resources/img" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources/Login" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources/Login/img" type="java-resource" />
     </content>
   </component>
 </module>
