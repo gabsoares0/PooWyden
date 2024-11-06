@@ -29,3 +29,17 @@
     -fx-background-color: #b60000;
     -fx-background-radius: 10;
 }
+
+.light-gray-background{
+    -fx-background-color: #F3F3F3;
+}
+
+.card3-matricular{
+    -fx-background-color: #49dd00;
+    -fx-background-radius: 10;
+}
+
+.card4-pendentes{
+    -fx-background-color: #dd5300;
+    -fx-background-radius: 10;
+}

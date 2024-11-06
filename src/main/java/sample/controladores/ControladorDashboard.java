@@ -1,4 +1,4 @@
-/*package sample.controladores;
+package sample.controladores;
 
 import javafx.fxml.FXML;
 import javafx.scene.Parent;
@@ -6,6 +6,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 import javafx.fxml.FXMLLoader;
+
+import java.io.IOException;
 
 public class ControladorDashboard {
     @FXML
@@ -30,5 +32,5 @@ public class ControladorDashboard {
             // Trate o erro conforme necessário
         }
     }
+}
 
- */

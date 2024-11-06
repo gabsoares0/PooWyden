@@ -14,18 +14,18 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="810.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <left>
-      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="834.0" prefWidth="313.0" spacing="5.0" stylesheets="@../values/style.css" BorderPane.alignment="CENTER">
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="834.0" prefWidth="313.0" spacing="5.0" stylesheets="@Dashboard/values/style.css" BorderPane.alignment="CENTER">
          <children>
             <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="200.0" spacing="20.0">
                <children>
                   <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../Img/inicio.png" />
+                        <Image url="@Dashboard/Img/inicio.png" />
                      </image>
                   </ImageView>
-                  <Label prefHeight="35.0" prefWidth="207.0" text="Início">
+                  <Label fx:id="labelInicio" prefHeight="35.0" prefWidth="207.0" text="Início">
                      <font>
-                        <Font name="System Bold" size="18.0" />
+                        <Font size="17.0" />
                      </font>
                   </Label>
                </children>
@@ -34,10 +34,10 @@
                <children>
                   <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../Img/alunos.png" />
+                        <Image url="@Dashboard/Img/alunos.png" />
                      </image>
                   </ImageView>
-                  <Label prefHeight="35.0" prefWidth="207.0" text="Alunos">
+                  <Label fx:id="labelAlunos" onMouseClicked="#carregarTela" prefHeight="35.0" prefWidth="207.0" text="Alunos">
                      <font>
                         <Font size="17.0" />
                      </font>
@@ -48,10 +48,10 @@
                <children>
                   <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../Img/professores.png" />
+                        <Image url="@Dashboard/Img/professores.png" />
                      </image>
                   </ImageView>
-                  <Label prefHeight="35.0" prefWidth="207.0" text="Professores">
+                  <Label fx:id="labelProfessores" prefHeight="35.0" prefWidth="207.0" text="Professores">
                      <font>
                         <Font size="17.0" />
                      </font>
@@ -62,10 +62,10 @@
                <children>
                   <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../Img/planos.png" />
+                        <Image url="@Dashboard/Img/planos.png" />
                      </image>
                   </ImageView>
-                  <Label prefHeight="35.0" prefWidth="207.0" text="Planos">
+                  <Label fx:id="labelPlanos" prefHeight="35.0" prefWidth="207.0" text="Planos">
                      <font>
                         <Font size="17.0" />
                      </font>
@@ -76,10 +76,10 @@
                <children>
                   <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../Img/financeiro.png" />
+                        <Image url="@Dashboard/Img/financeiro.png" />
                      </image>
                   </ImageView>
-                  <Label prefHeight="35.0" prefWidth="207.0" text="Financeiro">
+                  <Label fx:id="labelFinanceiro" prefHeight="35.0" prefWidth="207.0" text="Financeiro">
                      <font>
                         <Font size="17.0" />
                      </font>
@@ -90,10 +90,10 @@
                <children>
                   <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../Img/avisos.png" />
+                        <Image url="@Dashboard/Img/avisos.png" />
                      </image>
                   </ImageView>
-                  <Label prefHeight="35.0" prefWidth="207.0" text="Avisos">
+                  <Label fx:id="labelAvisos" prefHeight="35.0" prefWidth="207.0" text="Avisos">
                      <font>
                         <Font size="17.0" />
                      </font>
@@ -104,10 +104,10 @@
                <children>
                   <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../Img/analises.png" />
+                        <Image url="@Dashboard/Img/analises.png" />
                      </image>
                   </ImageView>
-                  <Label prefHeight="35.0" prefWidth="207.0" text="Relatórios">
+                  <Label fx:id="labelRelatorios" prefHeight="35.0" prefWidth="207.0" text="Relatórios">
                      <font>
                         <Font size="17.0" />
                      </font>
@@ -127,14 +127,14 @@
    <center>
       <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
          <children>
-            <HBox alignment="CENTER_LEFT" prefHeight="55.0" prefWidth="1065.0" spacing="20.0" styleClass="white-background" stylesheets="@../values/style.css">
+            <HBox alignment="CENTER_LEFT" prefHeight="55.0" prefWidth="1065.0" spacing="20.0" styleClass="white-background" stylesheets="@Dashboard/values/style.css">
                <children>
                   <Pane prefHeight="55.0" prefWidth="673.0" HBox.hgrow="ALWAYS" />
-                  <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="35.0" prefWidth="250.0" stylesheets="@../values/style.css">
+                  <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="35.0" prefWidth="250.0" stylesheets="@Dashboard/values/style.css">
                      <children>
                         <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../Img/lupa.png" />
+                              <Image url="@Dashboard/Img/lupa.png" />
                            </image>
                         </ImageView>
                         <TextField alignment="CENTER_RIGHT" maxHeight="-Infinity" prefHeight="27.0" prefWidth="202.0" promptText="Buscar..." styleClass="transparent" stylesheets="@../../values/style.css" />
@@ -152,7 +152,7 @@
                   </HBox>
                   <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../Img/notificação.png" />
+                        <Image url="@Dashboard/Img/notificação.png" />
                      </image>
                      <HBox.margin>
                         <Insets />
@@ -162,12 +162,12 @@
                      <children>
                         <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../Img/logo.png" />
+                              <Image url="@Dashboard/Img/logo.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../Img/seta.png" />
+                              <Image url="@Dashboard/Img/seta.png" />
                            </image>
                         </ImageView>
                      </children>
@@ -177,7 +177,7 @@
                   </HBox>
                </children>
             </HBox>
-            <VBox prefHeight="200.0" prefWidth="100.0" spacing="30.0" styleClass="primary-color" stylesheets="@../values/style.css" VBox.vgrow="ALWAYS">
+            <VBox fx:id="mainPane" prefHeight="200.0" prefWidth="100.0" spacing="30.0" styleClass="primary-color" stylesheets="@Dashboard/values/style.css" VBox.vgrow="ALWAYS">
                <children>
                   <VBox prefHeight="120.0" prefWidth="200.0" spacing="20.0">
                      <children>
@@ -188,7 +188,7 @@
                         </Label>
                         <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
                            <children>
-                              <VBox prefHeight="200.0" prefWidth="240.0" styleClass="card" stylesheets="@../values/style.css">
+                              <VBox prefHeight="200.0" prefWidth="240.0" styleClass="card" stylesheets="@Dashboard/values/style.css">
                                  <children>
                                     <HBox alignment="CENTER" prefHeight="43.0" prefWidth="240.0">
                                        <children>
@@ -215,7 +215,7 @@
                                     <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
                                  </padding>
                               </VBox>
-                              <VBox prefHeight="200.0" prefWidth="240.0" styleClass="card2" stylesheets="@../values/style.css">
+                              <VBox prefHeight="200.0" prefWidth="240.0" styleClass="card2" stylesheets="@Dashboard/values/style.css">
                                  <children>
                                     <HBox alignment="CENTER" prefHeight="43.0" prefWidth="240.0">
                                        <children>
@@ -242,7 +242,7 @@
                                     <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
                                  </padding>
                               </VBox>
-                              <VBox prefHeight="200.0" prefWidth="240.0" styleClass="card" stylesheets="@../values/style.css">
+                              <VBox prefHeight="200.0" prefWidth="240.0" styleClass="card" stylesheets="@Dashboard/values/style.css">
                                  <children>
                                     <HBox alignment="CENTER" prefHeight="43.0" prefWidth="240.0">
                                        <children>
@@ -269,7 +269,7 @@
                                     <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
                                  </padding>
                               </VBox>
-                              <VBox prefHeight="200.0" prefWidth="240.0" styleClass="card" stylesheets="@../values/style.css">
+                              <VBox prefHeight="200.0" prefWidth="240.0" styleClass="card" stylesheets="@Dashboard/values/style.css">
                                  <children>
                                     <HBox alignment="CENTER" prefHeight="26.0" prefWidth="181.0">
                                        <children>
@@ -307,7 +307,7 @@
                               <Font name="System Bold" size="16.0" />
                            </font>
                         </Label>
-                        <HBox prefHeight="270.0" prefWidth="200.0" spacing="20.0" styleClass="card" stylesheets="@../values/style.css">
+                        <HBox prefHeight="270.0" prefWidth="200.0" spacing="20.0" styleClass="card" stylesheets="@Dashboard/values/style.css">
                            <children>
                               <VBox prefHeight="200.0" prefWidth="190.0">
                                  <children>
@@ -315,7 +315,7 @@
                                        <children>
                                           <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="42.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@../Img/nicolas.png" />
+                                                <Image url="@Dashboard/Img/nicolas.png" />
                                              </image></ImageView>
                                        </children>
                                     </Pane>
@@ -340,7 +340,7 @@
                                        <children>
                                           <ImageView fitHeight="120.0" fitWidth="129.0" layoutX="31.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@../Img/igor.png" />
+                                                <Image url="@Dashboard/Img/igor.png" />
                                              </image>
                                           </ImageView>
                                        </children>
@@ -366,7 +366,7 @@
                                        <children>
                                           <ImageView fitHeight="123.0" fitWidth="130.0" layoutX="26.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@../Img/gab.png" />
+                                                <Image url="@Dashboard/Img/gab.png" />
                                              </image>
                                           </ImageView>
                                        </children>
@@ -392,7 +392,7 @@
                                        <children>
                                           <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="17.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@../Img/henrique.png" />
+                                                <Image url="@Dashboard/Img/henrique.png" />
                                              </image>
                                           </ImageView>
                                        </children>
@@ -418,7 +418,7 @@
                                        <children>
                                           <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="29.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@../Img/nicolas.png" />
+                                                <Image url="@Dashboard/Img/nicolas.png" />
                                              </image>
                                           </ImageView>
                                        </children>
@@ -447,7 +447,7 @@
                   </VBox>
                   <HBox prefHeight="170.0" prefWidth="200.0" spacing="20.0">
                      <children>
-                        <VBox prefHeight="200.0" prefWidth="490.0" styleClass="card" stylesheets="@../values/style.css">
+                        <VBox prefHeight="200.0" prefWidth="490.0" styleClass="card" stylesheets="@Dashboard/values/style.css">
                            <children>
                               <Label prefHeight="26.0" prefWidth="187.0" text="VARIAVEL">
                                  <font>
@@ -507,7 +507,7 @@
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </padding>
                         </VBox>
-                        <VBox prefHeight="200.0" prefWidth="490.0" styleClass="card" stylesheets="@../values/style.css">
+                        <VBox prefHeight="200.0" prefWidth="490.0" styleClass="card" stylesheets="@Dashboard/values/style.css">
                            <children>
                               <Label prefHeight="26.0" prefWidth="187.0" text="VARIAVEL">
                                  <font>

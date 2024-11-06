@@ -25,7 +25,7 @@ public class ControladorLogin {
         if ("admin".equals(username.getText()) && "admin".equals(password.getText())) {
             try {
                 // Carrega a nova tela do dashboard
-                Parent root = FXMLLoader.load(getClass().getResource("/Dashboard/dashboard/dashboard.fxml"));
+                Parent root = FXMLLoader.load(getClass().getResource("/dashboard.fxml"));
                 Scene scene = new Scene(root);
 
                 // Adiciona o CSS
