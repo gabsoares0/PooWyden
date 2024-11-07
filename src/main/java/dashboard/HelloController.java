@@ -14,7 +14,7 @@ public class HelloController {
 
     @FXML
     private void abrirTelaAlunos() {
-        carregarTela("C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\backup limpo\\src\\main\\resources\\Dashboard\\alunos.fxml"); // caminho correto do seu arquivo Alunos.fxml
+        carregarTela("Dashboard.alunos.fxml"); // caminho correto do seu arquivo Alunos.fxml
     }
 
     // Método para carregar uma nova tela no mainPane
@@ -37,7 +37,7 @@ public class HelloController {
 
     @FXML
     private void abrirAlunos() {
-        carregarTela("C:\\Users\\gabri\\OneDrive\\Área de Trabalho\\backup limpo\\src\\main\\resources\\Dashboard\\alunos.fxml");
+        carregarTela("Dashboard.alunos.fxml");
     }
 
     @FXML
