@@ -16,6 +16,11 @@
     -fx-background-color: rgba(0,0,0,0);
 }
 
+.menu-item:hover {
+    -fx-background-color: green; /* Fundo verde ao passar o mouse */
+    -fx-text-fill: white; /* Cor do texto ao passar o mouse */
+}
+
 .primary-color{
     -fx-background-color: #EFF2F6;
 }
