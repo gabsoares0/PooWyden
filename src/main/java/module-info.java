@@ -1,9 +1,8 @@
-module loginform.loginform {
+module poowyden.poowyden {
     requires javafx.controls;
     requires javafx.fxml;
 
-    opens loginform.loginform to javafx.fxml;
-    opens sample.controladores to javafx.fxml;
-    exports loginform.loginform;
-    exports sample.controladores;
+
+    opens poowyden.poowyden to javafx.fxml;
+    exports poowyden.poowyden;
 }
