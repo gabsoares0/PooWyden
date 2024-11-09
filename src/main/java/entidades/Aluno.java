@@ -6,16 +6,16 @@ public class Aluno {
     private Long id;
     private String nome;
     private String matricula;
-    private String email;
+    private String contato;
     private String curso;
     private LocalDate dataNascimento;
 
     
-    public Aluno(Long id, String nome, String matricula, String email, String curso, LocalDate dataNascimento) {
+    public Aluno(Long id, String nome, String matricula, String contato, String curso, LocalDate dataNascimento) {
         this.id = id;
         this.nome = nome;
         this.matricula = matricula;
-        this.email = email;
+        this.contato = contato;
         this.curso = curso;
         this.dataNascimento = dataNascimento;
     }
@@ -45,12 +45,12 @@ public class Aluno {
         this.matricula = matricula;
     }
 
-    public String getEmail() {
-        return email;
+    public String getContato() {
+        return contato;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setContato(String contato) {
+        this.contato = contato;
     }
 
     public String getCurso() {

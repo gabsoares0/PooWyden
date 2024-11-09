@@ -2,6 +2,7 @@
 
 <?import java.lang.String?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
@@ -23,11 +24,17 @@
                         <Image url="@Img/inicio.png" />
                      </image>
                   </ImageView>
-                  <Label fx:id="labelInicio" prefHeight="35.0" prefWidth="207.0" text="Início">
+                  <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="61.0" styleClass="transparent" stylesheets="@values/style.css" text="Início">
                      <font>
-                        <Font size="17.0" />
+                        <Font size="16.0" />
                      </font>
-                  </Label>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets right="20.0" />
+                     </padding>
+                  </Button>
                </children>
             </HBox>
             <HBox alignment="CENTER_LEFT" layoutX="30.0" layoutY="392.0" prefHeight="45.0" prefWidth="200.0" spacing="20.0">
@@ -37,11 +44,14 @@
                         <Image url="@Img/alunos.png" />
                      </image>
                   </ImageView>
-                  <Label fx:id="labelAlunos" prefHeight="35.0" prefWidth="207.0" text="Alunos">
+                  <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="70.0" styleClass="transparent" stylesheets="@values/style.css" text="Alunos">
                      <font>
-                        <Font size="17.0" />
+                        <Font size="16.0" />
                      </font>
-                  </Label>
+                     <padding>
+                        <Insets right="20.0" />
+                     </padding>
+                  </Button>
                </children>
             </HBox>
             <HBox alignment="CENTER_LEFT" layoutX="30.0" layoutY="416.0" prefHeight="45.0" prefWidth="200.0" spacing="20.0">
@@ -51,11 +61,14 @@
                         <Image url="@Img/professores.png" />
                      </image>
                   </ImageView>
-                  <Label fx:id="labelProfessores" prefHeight="35.0" prefWidth="207.0" text="Professores">
+                  <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="102.0" styleClass="transparent" stylesheets="@values/style.css" text="Professores">
                      <font>
-                        <Font size="17.0" />
+                        <Font size="16.0" />
                      </font>
-                  </Label>
+                     <padding>
+                        <Insets right="20.0" />
+                     </padding>
+                  </Button>
                </children>
             </HBox>
             <HBox alignment="CENTER_LEFT" layoutX="30.0" layoutY="438.0" prefHeight="45.0" prefWidth="200.0" spacing="20.0">
@@ -65,11 +78,14 @@
                         <Image url="@Img/planos.png" />
                      </image>
                   </ImageView>
-                  <Label fx:id="labelPlanos" prefHeight="35.0" prefWidth="207.0" text="Planos">
+                  <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="66.0" styleClass="transparent" stylesheets="@values/style.css" text="Planos">
                      <font>
-                        <Font size="17.0" />
+                        <Font size="16.0" />
                      </font>
-                  </Label>
+                     <padding>
+                        <Insets right="20.0" />
+                     </padding>
+                  </Button>
                </children>
             </HBox>
             <HBox alignment="CENTER_LEFT" layoutX="30.0" layoutY="461.0" prefHeight="45.0" prefWidth="200.0" spacing="20.0">
@@ -79,11 +95,14 @@
                         <Image url="@Img/financeiro.png" />
                      </image>
                   </ImageView>
-                  <Label fx:id="labelFinanceiro" prefHeight="35.0" prefWidth="207.0" text="Financeiro">
+                  <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="96.0" styleClass="transparent" stylesheets="@values/style.css" text="Financeiro">
                      <font>
-                        <Font size="17.0" />
+                        <Font size="16.0" />
                      </font>
-                  </Label>
+                     <padding>
+                        <Insets right="20.0" />
+                     </padding>
+                  </Button>
                </children>
             </HBox>
             <HBox alignment="CENTER_LEFT" layoutX="30.0" layoutY="484.0" prefHeight="45.0" prefWidth="200.0" spacing="20.0">
@@ -93,11 +112,14 @@
                         <Image url="@Img/avisos.png" />
                      </image>
                   </ImageView>
-                  <Label fx:id="labelAvisos" prefHeight="35.0" prefWidth="207.0" text="Avisos">
+                  <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="66.0" styleClass="transparent" stylesheets="@values/style.css" text="Avisos">
                      <font>
-                        <Font size="17.0" />
+                        <Font size="16.0" />
                      </font>
-                  </Label>
+                     <padding>
+                        <Insets right="20.0" />
+                     </padding>
+                  </Button>
                </children>
             </HBox>
             <HBox alignment="CENTER_LEFT" layoutX="30.0" layoutY="507.0" prefHeight="45.0" prefWidth="200.0" spacing="20.0">
@@ -107,11 +129,14 @@
                         <Image url="@Img/analises.png" />
                      </image>
                   </ImageView>
-                  <Label fx:id="labelRelatorios" prefHeight="35.0" prefWidth="207.0" text="Relatórios">
+                  <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="96.0" styleClass="transparent" stylesheets="@values/style.css" text="Relatórios">
                      <font>
-                        <Font size="17.0" />
+                        <Font size="16.0" />
                      </font>
-                  </Label>
+                     <padding>
+                        <Insets right="20.0" />
+                     </padding>
+                  </Button>
                </children>
             </HBox>
          </children>
