@@ -36,7 +36,7 @@
                   </Button>
                </children>
             </HBox>
-            <HBox id="students-button" alignment="CENTER_LEFT" layoutX="30.0" layoutY="392.0" prefHeight="45.0" prefWidth="200.0" spacing="20.0" styleClass="menu-item">
+            <HBox id="students-button" onMouseClicked="#loadStudentsView" alignment="CENTER_LEFT" layoutX="30.0" layoutY="392.0" prefHeight="45.0" prefWidth="200.0" spacing="20.0" styleClass="menu-item">
                <children>
                   <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -53,7 +53,7 @@
                   </Button>
                </children>
             </HBox>
-            <HBox id="professors-button" alignment="CENTER_LEFT" layoutX="30.0" layoutY="416.0" prefHeight="45.0" prefWidth="200.0" spacing="20.0" styleClass="menu-item">
+            <HBox id="professors-button" onMouseClicked="#loadProfessorsView" alignment="CENTER_LEFT" layoutX="30.0" layoutY="416.0" prefHeight="45.0" prefWidth="200.0" spacing="20.0" styleClass="menu-item">
                <children>
                   <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -70,7 +70,7 @@
                   </Button>
                </children>
             </HBox>
-            <HBox id="plans-button" alignment="CENTER_LEFT" layoutX="30.0" layoutY="438.0" prefHeight="45.0" prefWidth="200.0" spacing="20.0" styleClass="menu-item">
+            <HBox id="plans-button" onMouseClicked="#loadPlansView" alignment="CENTER_LEFT" layoutX="30.0" layoutY="438.0" prefHeight="45.0" prefWidth="200.0" spacing="20.0" styleClass="menu-item">
                <children>
                   <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -87,7 +87,7 @@
                   </Button>
                </children>
             </HBox>
-            <HBox id="finance-button" alignment="CENTER_LEFT" layoutX="30.0" layoutY="461.0" prefHeight="45.0" prefWidth="200.0" spacing="20.0" styleClass="menu-item">
+            <HBox id="finance-button" onMouseClicked="#loadFinancesView" alignment="CENTER_LEFT" layoutX="30.0" layoutY="461.0" prefHeight="45.0" prefWidth="200.0" spacing="20.0" styleClass="menu-item">
                <children>
                   <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -104,7 +104,7 @@
                   </Button>
                </children>
             </HBox>
-            <HBox id="warning-button" alignment="CENTER_LEFT" layoutX="30.0" layoutY="484.0" prefHeight="45.0" prefWidth="200.0" spacing="20.0" styleClass="menu-item">
+            <HBox id="warning-button" onMouseClicked="#loadWarningsView" alignment="CENTER_LEFT" layoutX="30.0" layoutY="484.0" prefHeight="45.0" prefWidth="200.0" spacing="20.0" styleClass="menu-item">
                <children>
                   <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -121,7 +121,7 @@
                   </Button>
                </children>
             </HBox>
-            <HBox id="relatory-button" alignment="CENTER_LEFT" layoutX="30.0" layoutY="507.0" prefHeight="45.0" prefWidth="200.0" spacing="20.0" styleClass="menu-item">
+            <HBox id="relatory-button" onMouseClicked="#loadRelatoryView" alignment="CENTER_LEFT" layoutX="30.0" layoutY="507.0" prefHeight="45.0" prefWidth="200.0" spacing="20.0" styleClass="menu-item">
                <children>
                   <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                      <image>

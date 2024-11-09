@@ -36,4 +36,26 @@ public class DashboardController{
     public void loadStudentsView(){
         loadView("students.fxml");
     }
+
+    public void loadProfessorsView(){
+        loadView("professors.fxml");
+    }
+
+    public void loadPlansView(){
+        loadView("plans.fxml");
+    }
+
+    public void loadFinancesView(){
+        loadView("finance.fxml");
+    }
+
+    public void loadWarningsView(){
+        loadView("warnings.fxml");
+    }
+
+    public void loadRelatoryView(){
+        loadView("relatory.fxml");
+    }
+
+
 }
