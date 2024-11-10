@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="943.0" spacing="10.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="poowyden.poowyden.ItemAluno">
+<HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="943.0" spacing="10.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="poowyden.poowyden.ContactItem">
    <children>
       <ImageView fx:id="img" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -18,12 +18,12 @@
             <Insets left="15.0" right="10.0" />
          </HBox.margin>
       </ImageView>
-      <Label fx:id="nomeUser" prefHeight="23.0" prefWidth="165.0" text="Nome User" textFill="#575757">
+      <Label fx:id="name" prefHeight="23.0" prefWidth="165.0" text="Nome User" textFill="#575757">
          <font>
             <Font name="Corbel" size="18.0" />
          </font>
       </Label>
-      <Label fx:id="contato" prefHeight="23.0" prefWidth="148.0" text="(81)9 9999-9999" textFill="#575757">
+      <Label fx:id="phone" prefHeight="23.0" prefWidth="148.0" text="(81)9 9999-9999" textFill="#575757">
          <font>
             <Font name="Arial" size="18.0" />
          </font>
@@ -40,7 +40,7 @@
          <children>
             <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #49dd00;">
                <graphic>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="pago" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../resources/Dashboard/Img/pago.png" />
                      </image>
@@ -49,7 +49,7 @@
             </Button>
             <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #EBC95E;">
                <graphic>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="pendente" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../resources/Dashboard/Img/contatar.png" />
                      </image>

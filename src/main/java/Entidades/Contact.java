@@ -1,6 +1,6 @@
 package Entidades;
 
-public class Aluno {
+public class Contact {
     private String name;
     private String phone;
     private String imgSrc;
