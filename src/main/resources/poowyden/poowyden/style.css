@@ -71,3 +71,23 @@
 .text-search{
     -fx-prompt-text-fill: #FFF;
 }
+
+.background-faixaPlanos{
+    -fx-background-color: #FCCD2A;
+    -fx-background-radius: 10;
+}
+
+.color-textFaixaPlans{
+    -fx-text-fill: #31511E;
+}
+
+.cardPlans{
+    -fx-background-color: #FFF;
+    -fx-background-radius: 10;
+    -fx-effect: dropShadow(three-pass-box, rgba(0,0,0,0.1),10.0 0 0 10.0);
+}
+
+.background-buttonPlan{
+    -fx-background-color: #FCCD2A;
+    -fx-background-radius: 50;
+}

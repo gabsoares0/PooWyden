@@ -1,11 +1,320 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Text?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="poowyden.poowyden.ProfessorsController">
-   <children>
-      <Text layoutX="227.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PAINEL DOS PROFESSORES" />
-   </children>
-</AnchorPane>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="755.2" prefWidth="1001.6" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="30.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="120.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Label prefHeight="26.0" prefWidth="230.0" text="Ações professores">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="240.0" styleClass="card3-matricular" stylesheets="@style.css">
+                           <children>
+                              <Label prefHeight="80.0" prefWidth="190.0" text="Registrar+" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="30.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                           </padding>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="240.0" styleClass="card" stylesheets="@style.css">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="43.0" prefWidth="240.0">
+                                 <children>
+                                    <Label prefHeight="26.0" prefWidth="299.0" text="Pagos">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <Label prefHeight="56.0" prefWidth="246.0" text="14">
+                                 <font>
+                                    <Font name="System Bold" size="30.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                           </padding>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="240.0" styleClass="card4-pendentes" stylesheets="@style.css">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="43.0" prefWidth="240.0">
+                                 <children>
+                                    <Label prefHeight="26.0" prefWidth="187.0" text="Pendentes" textFill="WHITE">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <Label prefHeight="56.0" prefWidth="246.0" text="46" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="30.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                           </padding>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="240.0" styleClass="card2" stylesheets="@style.css">
+                           <children>
+                              <Label prefHeight="74.0" prefWidth="191.0" text="Excluir aluno" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="30.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Label text="Professores">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="462.0" prefWidth="957.0" styleClass="transparent" stylesheets="@style.css">
+               <children>
+                  <ScrollPane prefHeight="462.0" prefWidth="943.0">
+                     <content>
+                        <VBox fx:id="alunosLayout" prefHeight="458.0" prefWidth="894.0" spacing="10.0" styleClass="white-background" stylesheets="@style.css">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="55.0" prefWidth="914.0" spacing="10.0" styleClass="light-gray-background" stylesheets="@style.css">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="23.0" prefWidth="38.0" text="A" textFill="#575757">
+                                       <font>
+                                          <Font name="Corbel Bold" size="20.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label prefHeight="23.0" prefWidth="164.0" text="Nome" textFill="#575757">
+                                       <font>
+                                          <Font name="Corbel Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="23.0" prefWidth="166.0" text="Contato" textFill="#575757">
+                                       <font>
+                                          <Font name="Corbel Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="23.0" prefWidth="268.0" text="Status" textFill="#575757">
+                                       <font>
+                                          <Font name="Corbel Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="23.0" prefWidth="170.0" text="Ações" textFill="#575757">
+                                       <font>
+                                          <Font name="Corbel Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+                  <VBox prefHeight="505.0" prefWidth="46.0" styleClass="light-gray-background" stylesheets="@style.css">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="55.0" prefWidth="55.0" style="-fx-background-color: #F3F3F3;" styleClass="light-gray-background" stylesheets="@style.css" text="#" textFill="#575757">
+                           <font>
+                              <Font name="Corbel Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="30.0" prefWidth="46.0" stylesheets="@style.css" text="A" textFill="#575757">
+                           <font>
+                              <Font name="Corbel" size="18.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="light-gray-background" />
+                              <String fx:value="light-gray-background" />
+                              <String fx:value="card" />
+                           </styleClass>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="30.0" prefWidth="46.0" stylesheets="@style.css" text="B" textFill="#575757">
+                           <font>
+                              <Font name="Corbel" size="18.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="light-gray-background" />
+                              <String fx:value="light-gray-background" />
+                              <String fx:value="card" />
+                           </styleClass>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="30.0" prefWidth="46.0" stylesheets="@style.css" text="C" textFill="#575757">
+                           <font>
+                              <Font name="Corbel" size="18.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="light-gray-background" />
+                              <String fx:value="light-gray-background" />
+                              <String fx:value="card" />
+                           </styleClass>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="30.0" prefWidth="46.0" stylesheets="@style.css" text="D" textFill="#575757">
+                           <font>
+                              <Font name="Corbel" size="18.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="light-gray-background" />
+                              <String fx:value="light-gray-background" />
+                              <String fx:value="card" />
+                           </styleClass>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="30.0" prefWidth="46.0" stylesheets="@style.css" text="E" textFill="#575757">
+                           <font>
+                              <Font name="Corbel" size="18.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="light-gray-background" />
+                              <String fx:value="light-gray-background" />
+                              <String fx:value="card" />
+                           </styleClass>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="30.0" prefWidth="46.0" stylesheets="@style.css" text="F" textFill="#575757">
+                           <font>
+                              <Font name="Corbel" size="18.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="light-gray-background" />
+                              <String fx:value="light-gray-background" />
+                              <String fx:value="card" />
+                           </styleClass>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="30.0" prefWidth="46.0" stylesheets="@style.css" text="G" textFill="#575757">
+                           <font>
+                              <Font name="Corbel" size="18.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="light-gray-background" />
+                              <String fx:value="light-gray-background" />
+                              <String fx:value="card" />
+                           </styleClass>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="30.0" prefWidth="46.0" stylesheets="@style.css" text="H" textFill="#575757">
+                           <font>
+                              <Font name="Corbel" size="18.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="light-gray-background" />
+                              <String fx:value="light-gray-background" />
+                              <String fx:value="card" />
+                           </styleClass>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="30.0" prefWidth="46.0" stylesheets="@style.css" text="I" textFill="#575757">
+                           <font>
+                              <Font name="Corbel" size="18.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="light-gray-background" />
+                              <String fx:value="light-gray-background" />
+                              <String fx:value="card" />
+                           </styleClass>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="30.0" prefWidth="46.0" stylesheets="@style.css" text="J" textFill="#575757">
+                           <font>
+                              <Font name="Corbel" size="18.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="light-gray-background" />
+                              <String fx:value="light-gray-background" />
+                              <String fx:value="card" />
+                           </styleClass>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="30.0" prefWidth="46.0" stylesheets="@style.css" text="K" textFill="#575757">
+                           <font>
+                              <Font name="Corbel" size="18.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="light-gray-background" />
+                              <String fx:value="light-gray-background" />
+                              <String fx:value="card" />
+                           </styleClass>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="30.0" prefWidth="46.0" stylesheets="@style.css" text="L" textFill="#575757">
+                           <font>
+                              <Font name="Corbel" size="18.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="light-gray-background" />
+                              <String fx:value="light-gray-background" />
+                              <String fx:value="card" />
+                           </styleClass>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="30.0" prefWidth="46.0" stylesheets="@style.css" text="M" textFill="#575757">
+                           <font>
+                              <Font name="Corbel" size="18.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="light-gray-background" />
+                              <String fx:value="light-gray-background" />
+                              <String fx:value="card" />
+                           </styleClass>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="30.0" prefWidth="46.0" stylesheets="@style.css" text="N" textFill="#575757">
+                           <font>
+                              <Font name="Corbel" size="18.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="light-gray-background" />
+                              <String fx:value="light-gray-background" />
+                              <String fx:value="card" />
+                           </styleClass>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="30.0" prefWidth="46.0" stylesheets="@style.css" text="O" textFill="#575757">
+                           <font>
+                              <Font name="Corbel" size="18.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="light-gray-background" />
+                              <String fx:value="light-gray-background" />
+                              <String fx:value="card" />
+                           </styleClass>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="30.0" prefWidth="46.0" stylesheets="@style.css" text="P" textFill="#575757">
+                           <font>
+                              <Font name="Corbel" size="18.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="light-gray-background" />
+                              <String fx:value="light-gray-background" />
+                              <String fx:value="card" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+         </padding>
+      </VBox>
+   </center>
+</BorderPane>
