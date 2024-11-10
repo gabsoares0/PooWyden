@@ -1,5 +1,3 @@
-//teste//
-
 package poowyden.poowyden;
 
 import javafx.fxml.FXML;
