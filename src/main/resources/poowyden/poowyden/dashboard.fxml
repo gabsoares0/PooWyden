@@ -14,36 +14,29 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="810.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="poowyden.poowyden.DashboardController">
    <left>
-      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="834.0" prefWidth="313.0" spacing="5.0" stylesheets="@style.css" BorderPane.alignment="CENTER">
+      <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="844.0" prefWidth="314.0" spacing="5.0" styleClass="white-background" stylesheets="@style.css" BorderPane.alignment="CENTER">
          <children>
-            <HBox id="home-button" onMouseClicked="#loadHomeView" alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="200.0" spacing="20.0" styleClass="menu-item">
+            <HBox id="home-button" alignment="CENTER_LEFT" onMouseClicked="#loadHomeView" prefHeight="46.0" prefWidth="222.0" spacing="5.0" styleClass="menu-item">
                <children>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@imgs/inicio.png" />
+                        <Image url="@imgs/home.png" />
                      </image>
                   </ImageView>
-                  <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="61.0" styleClass="transparent" stylesheets="@style.css" text="Início">
+                  <Button minWidth="50.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="64.0" styleClass="transparent" stylesheets="@style.css" text="Início">
                      <font>
                         <Font size="16.0" />
-                     </font>
-                     <HBox.margin>
-                        <Insets />
-                     </HBox.margin>
-                     <padding>
-                        <Insets right="20.0" />
-                     </padding>
-                  </Button>
+                     </font></Button>
                </children>
             </HBox>
-            <HBox id="students-button" onMouseClicked="#loadStudentsView" alignment="CENTER_LEFT" layoutX="30.0" layoutY="392.0" prefHeight="45.0" prefWidth="200.0" spacing="20.0" styleClass="menu-item">
+            <HBox id="students-button" alignment="CENTER_LEFT" layoutX="30.0" layoutY="392.0" onMouseClicked="#loadStudentsView" prefHeight="45.0" prefWidth="200.0" spacing="5.0" styleClass="menu-item">
                <children>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@imgs/alunos.png" />
+                        <Image url="@imgs/add-user%20(1).png" />
                      </image>
                   </ImageView>
-                  <Button id="student" mnemonicParsing="false" prefHeight="38.0" prefWidth="70.0" styleClass="transparent" stylesheets="@style.css" text="Alunos">
+                  <Button id="student" mnemonicParsing="false" prefHeight="31.0" prefWidth="76.0" styleClass="transparent" stylesheets="@style.css" text="Alunos">
                      <font>
                         <Font size="16.0" />
                      </font>
@@ -53,14 +46,14 @@
                   </Button>
                </children>
             </HBox>
-            <HBox id="professors-button" onMouseClicked="#loadProfessorsView" alignment="CENTER_LEFT" layoutX="30.0" layoutY="416.0" prefHeight="45.0" prefWidth="200.0" spacing="20.0" styleClass="menu-item">
+            <HBox id="professors-button" alignment="CENTER_LEFT" layoutX="30.0" layoutY="416.0" onMouseClicked="#loadProfessorsView" prefHeight="45.0" prefWidth="200.0" spacing="5.0" styleClass="menu-item">
                <children>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@imgs/professores.png" />
+                        <Image url="@imgs/biceps.png" />
                      </image>
                   </ImageView>
-                  <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="102.0" styleClass="transparent" stylesheets="@style.css" text="Professores">
+                  <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="107.0" styleClass="transparent" stylesheets="@style.css" text="Professores">
                      <font>
                         <Font size="16.0" />
                      </font>
@@ -70,14 +63,14 @@
                   </Button>
                </children>
             </HBox>
-            <HBox id="plans-button" onMouseClicked="#loadPlansView" alignment="CENTER_LEFT" layoutX="30.0" layoutY="438.0" prefHeight="45.0" prefWidth="200.0" spacing="20.0" styleClass="menu-item">
+            <HBox id="plans-button" alignment="CENTER_LEFT" layoutX="30.0" layoutY="438.0" onMouseClicked="#loadPlansView" prefHeight="45.0" prefWidth="200.0" spacing="5.0" styleClass="menu-item">
                <children>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@imgs/planos.png" />
+                        <Image url="@imgs/weight.png" />
                      </image>
                   </ImageView>
-                  <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="66.0" styleClass="transparent" stylesheets="@style.css" text="Planos">
+                  <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="74.0" styleClass="transparent" stylesheets="@style.css" text="Planos">
                      <font>
                         <Font size="16.0" />
                      </font>
@@ -87,14 +80,14 @@
                   </Button>
                </children>
             </HBox>
-            <HBox id="finance-button" onMouseClicked="#loadFinancesView" alignment="CENTER_LEFT" layoutX="30.0" layoutY="461.0" prefHeight="45.0" prefWidth="200.0" spacing="20.0" styleClass="menu-item">
+            <HBox id="finance-button" alignment="CENTER_LEFT" layoutX="30.0" layoutY="461.0" onMouseClicked="#loadFinancesView" prefHeight="45.0" prefWidth="200.0" spacing="5.0" styleClass="menu-item">
                <children>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@imgs/financeiro.png" />
+                        <Image url="@imgs/icons8-cartão-96.png" />
                      </image>
                   </ImageView>
-                  <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="96.0" styleClass="transparent" stylesheets="@style.css" text="Financeiro">
+                  <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="98.0" styleClass="transparent" stylesheets="@style.css" text="Financeiro">
                      <font>
                         <Font size="16.0" />
                      </font>
@@ -104,14 +97,14 @@
                   </Button>
                </children>
             </HBox>
-            <HBox id="warning-button" onMouseClicked="#loadWarningsView" alignment="CENTER_LEFT" layoutX="30.0" layoutY="484.0" prefHeight="45.0" prefWidth="200.0" spacing="20.0" styleClass="menu-item">
+            <HBox id="warning-button" alignment="CENTER_LEFT" layoutX="30.0" layoutY="484.0" onMouseClicked="#loadWarningsView" prefHeight="45.0" prefWidth="200.0" spacing="5.0" styleClass="menu-item">
                <children>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@imgs/avisos.png" />
+                        <Image url="@imgs/icons8-bate-papo-64.png" />
                      </image>
                   </ImageView>
-                  <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="66.0" styleClass="transparent" stylesheets="@style.css" text="Avisos">
+                  <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="78.0" styleClass="transparent" stylesheets="@style.css" text="Avisos">
                      <font>
                         <Font size="16.0" />
                      </font>
@@ -121,14 +114,14 @@
                   </Button>
                </children>
             </HBox>
-            <HBox id="relatory-button" onMouseClicked="#loadRelatoryView" alignment="CENTER_LEFT" layoutX="30.0" layoutY="507.0" prefHeight="45.0" prefWidth="200.0" spacing="20.0" styleClass="menu-item">
+            <HBox id="relatory-button" alignment="CENTER_LEFT" layoutX="30.0" layoutY="507.0" onMouseClicked="#loadRelatoryView" prefHeight="45.0" prefWidth="200.0" spacing="5.0" styleClass="menu-item">
                <children>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@imgs/analises.png" />
+                        <Image url="@imgs/icons8-gráfico-64.png" />
                      </image>
                   </ImageView>
-                  <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="96.0" styleClass="transparent" stylesheets="@style.css" text="Relatórios">
+                  <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="102.0" styleClass="transparent" stylesheets="@style.css" text="Relatórios">
                      <font>
                         <Font size="16.0" />
                      </font>
@@ -140,67 +133,13 @@
             </HBox>
          </children>
          <padding>
-            <Insets left="20.0" right="20.0" />
+            <Insets left="20.0" right="20.0" top="20.0" />
          </padding>
-         <styleClass>
-            <String fx:value="white-background" />
-            <String fx:value="right-side-border" />
-         </styleClass>
       </VBox>
    </left>
    <center>
       <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
          <children>
-            <HBox alignment="CENTER_LEFT" prefHeight="55.0" prefWidth="1065.0" spacing="20.0" styleClass="white-background" stylesheets="@style.css">
-               <children>
-                  <Pane prefHeight="55.0" prefWidth="673.0" HBox.hgrow="ALWAYS" />
-                  <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="35.0" prefWidth="250.0" stylesheets="@style.css">
-                     <children>
-                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@imgs/lupa.png" />
-                           </image>
-                        </ImageView>
-                        <TextField alignment="CENTER_RIGHT" maxHeight="-Infinity" prefHeight="27.0" prefWidth="202.0" promptText="Buscar..." styleClass="transparent" stylesheets="@style.css" />
-                     </children>
-                     <opaqueInsets>
-                        <Insets />
-                     </opaqueInsets>
-                     <HBox.margin>
-                        <Insets />
-                     </HBox.margin>
-                     <styleClass>
-                        <String fx:value="search-container" />
-                        <String fx:value="transparent" />
-                     </styleClass>
-                  </HBox>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@imgs/notificação.png" />
-                     </image>
-                     <HBox.margin>
-                        <Insets />
-                     </HBox.margin>
-                  </ImageView>
-                  <HBox alignment="CENTER" spacing="5.0">
-                     <children>
-                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@imgs/logo2.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@imgs/seta.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                     <HBox.margin>
-                        <Insets right="20.0" />
-                     </HBox.margin>
-                  </HBox>
-               </children>
-            </HBox>
             <VBox prefHeight="200.0" prefWidth="100.0" spacing="30.0" styleClass="primary-color" stylesheets="@style.css" VBox.vgrow="ALWAYS">
                <children>
                   <!-- home.fxml -->
@@ -214,4 +153,49 @@
          </children>
       </VBox>
    </center>
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="55.0" prefWidth="1065.0" spacing="20.0" styleClass="green-background" stylesheets="@style.css" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="55.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets left="22.0" />
+               </HBox.margin>
+               <image>
+                  <Image url="@imgs/logosearchbar.png" />
+               </image>
+            </ImageView>
+            <Pane prefHeight="55.0" prefWidth="342.0" />
+            <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="35.0" prefWidth="250.0" stylesheets="@style.css">
+               <children>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@imgs/lupas.png" />
+                     </image>
+                  </ImageView>
+                  <TextField maxHeight="-Infinity" prefHeight="27.0" prefWidth="202.0" promptText="Buscar..." stylesheets="@style.css">
+                     <styleClass>
+                        <String fx:value="transparent" />
+                        <String fx:value="text-search" />
+                     </styleClass></TextField>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <styleClass>
+                  <String fx:value="search-container" />
+                  <String fx:value="card_dentrosearch" />
+               </styleClass>
+            </HBox>
+            <HBox alignment="CENTER" spacing="5.0">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </HBox>
+            <Pane prefHeight="55.0" prefWidth="334.0" />
+         </children>
+      </HBox>
+   </top>
 </BorderPane>

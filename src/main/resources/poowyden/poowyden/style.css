@@ -2,18 +2,28 @@
     -fx-background-color: '#fff';
 }
 
+.greenclaro-background{
+    -fx-background-color: '#FFFBE6';
+}
+
+.green-background{
+    -fx-background-color: '#347928';
+}
+
 .right-side-border{
     -fx-border-color: #6F6F6F;
     -fx-border-width: 0 1 0 0;
 }
 
 .search-container{
-    -fx-border-color: #6F6F6F;
-    -fx-border-radius: 30;
+    -fx-border-color: #55ae46;
+    -fx-border-radius: 10;
 }
 
 .transparent{
     -fx-background-color: rgba(0,0,0,0);
+    -fx-text-fill: #000000;
+    -fx-effect: null;
 }
 
 .menu-item:hover {
@@ -27,6 +37,11 @@
 
 .card{
     -fx-background-color: #fff;
+    -fx-background-radius: 10;
+}
+
+.card_dentrosearch{
+    -fx-background-color: #55ae46;
     -fx-background-radius: 10;
 }
 
@@ -51,4 +66,8 @@
 
 .card4-matricular{
     -fx-background-color: #49dd00;
+}
+
+.text-search{
+    -fx-prompt-text-fill: #FFF;
 }

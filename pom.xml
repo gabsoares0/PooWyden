@@ -11,6 +11,8 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>22</maven.compiler.source>
+    <maven.compiler.target>22</maven.compiler.target>
 <junit.version>5.10.2</junit.version>  </properties>
 
   <dependencies>
@@ -22,6 +24,11 @@
     <dependency>
       <groupId>org.openjfx</groupId>
       <artifactId>javafx-fxml</artifactId>
+      <version>22.0.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.openjfx</groupId>
+      <artifactId>javafx-base</artifactId>
       <version>22.0.1</version>
     </dependency>
 
