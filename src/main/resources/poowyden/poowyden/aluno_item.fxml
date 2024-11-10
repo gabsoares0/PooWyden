@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="943.0" spacing="10.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Model.alunoItemController">
+<HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="943.0" spacing="10.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="poowyden.poowyden.ItemAluno">
    <children>
       <ImageView fx:id="img" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
          <image>
