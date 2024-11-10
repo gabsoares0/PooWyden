@@ -1,4 +1,4 @@
-package registroAlunos;
+package poowyden.poowyden;
 
 public class RegistroAluno {
 }
