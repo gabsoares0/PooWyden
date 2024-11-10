@@ -1,36 +1,61 @@
-/*
 package poowyden.poowyden;
 
 import javafx.fxml.FXML;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
+import javafx.scene.Node;
+import javafx.scene.layout.VBox;
 import java.io.IOException;
 import java.util.Objects;
-import javafx.scene.control.Button;
-import javafx.event.ActionEvent;
+
 import javafx.fxml.FXMLLoader;
 
-public class DashboardController {
+public class DashboardController{
 
     @FXML
-    private Button btnTrocarTela; // Botão que troca para outra tela
+    private VBox homeViewContainer; //Conteiner onde o FXML da tela selecionada no Dashboard será carregada
 
-    @FXML
-    private void trocarTela(ActionEvent event) {
-        try {
-            // Carrega a nova tela
-            Parent novaTelaRoot = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("NovaTela.fxml")));
+    //Metodo que limpa o conteudo atual do Vbox homeViewContainer e o susbstitui por outros arquivos FXML
+    public void loadView(String fxmlFile){
+        try{
+            //Limpa o conteudo atual
+            homeViewContainer.getChildren().clear();
 
-            // Obtém a janela atual (Stage) e muda a cena para a nova tela
-            Stage stage = (Stage) btnTrocarTela.getScene().getWindow();
-            stage.setScene(new Scene(novaTelaRoot));
-            stage.setTitle("Alunos");
-            System.out.println("Trocando para a nova tela!");
+            //Carrega o novo conteudo do FXML no fxmlFile passado como argumento
+            Node node = FXMLLoader.load(Objects.requireNonNull(getClass().getResource(fxmlFile)));
 
-        } catch (IOException e) {
+            // Adiciona o novo conteúdo ao VBox
+            homeViewContainer.getChildren().add(node);
+        } catch (IOException e){
+            System.err.println("Erro ao carregar o arquivo FXML: " + fxmlFile);
             e.printStackTrace();
-            System.out.println("Erro ao carregar a nova tela.");
         }
     }
-} */
+    public void loadHomeView(){
+        loadView("home.fxml");
+    }
+
+    public void loadStudentsView(){
+        loadView("students.fxml");
+    }
+
+    public void loadProfessorsView(){
+        loadView("professors.fxml");
+    }
+
+    public void loadPlansView(){
+        loadView("plans.fxml");
+    }
+
+    public void loadFinancesView(){
+        loadView("finance.fxml");
+    }
+
+    public void loadWarningsView(){
+        loadView("warnings.fxml");
+    }
+
+    public void loadRelatoryView(){
+        loadView("relatory.fxml");
+    }
+
+
+}

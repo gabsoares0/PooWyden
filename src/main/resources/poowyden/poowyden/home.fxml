@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox id="homeView-mainContainer" spacing="20.0">
+    <VBox id="homeView-sub1" prefHeight="290.0" prefWidth="100.0" spacing="20.0">
+        <children>
+            <Label text="Matriculados">
+                <font>
+                    <Font name="System Bold" size="16.0" />
+                </font>
+            </Label>
+            <HBox prefHeight="270.0" prefWidth="200.0" spacing="20.0" styleClass="card" stylesheets="@style.css">
+                <children>
+                    <VBox prefHeight="200.0" prefWidth="190.0">
+                        <children>
+                            <Pane prefHeight="130.0" prefWidth="190.0" style="-fx-background-color: #FDDB87; -fx-background-radius: 10;" />
+                            <Label prefHeight="31.0" prefWidth="150.0" text=" Variavel One Name">
+                                <font>
+                                    <Font name="System Bold" size="16.0" />
+                                </font>
+                                <VBox.margin>
+                                    <Insets top="20.0" />
+                                </VBox.margin>
+                            </Label>
+                            <Label layoutX="10.0" layoutY="140.0" text="rogerio.delas@gmail.com" textFill="#6f6f6f">
+                                <font>
+                                    <Font size="13.0" />
+                                </font>
+                            </Label>
+                        </children>
+                    </VBox>
+                    <VBox prefHeight="200.0" prefWidth="190.0">
+                        <children>
+                            <Pane prefHeight="130.0" prefWidth="190.0" style="-fx-background-color: #46CFC3; -fx-background-radius: 10;" />
+                            <Label prefHeight="31.0" prefWidth="150.0" text="Variavel Two Name">
+                                <font>
+                                    <Font name="System Bold" size="16.0" />
+                                </font>
+                                <VBox.margin>
+                                    <Insets top="20.0" />
+                                </VBox.margin>
+                            </Label>
+                            <Label layoutX="10.0" layoutY="140.0" text="marechal.deodoro@gmail.com" textFill="#6f6f6f">
+                                <font>
+                                    <Font size="13.0" />
+                                </font>
+                            </Label>
+                        </children>
+                    </VBox>
+                    <VBox layoutX="240.0" layoutY="30.0" prefHeight="200.0" prefWidth="190.0">
+                        <children>
+                            <Pane prefHeight="130.0" prefWidth="190.0" style="-fx-background-color: #F4D2E2; -fx-background-radius: 10;" />
+                            <Label prefHeight="31.0" prefWidth="150.0" text="Variavel Three Name">
+                                <font>
+                                    <Font name="System Bold" size="16.0" />
+                                </font>
+                                <VBox.margin>
+                                    <Insets top="20.0" />
+                                </VBox.margin>
+                            </Label>
+                            <Label layoutX="10.0" layoutY="140.0" text="cristiano.ronaldo@gmail.com" textFill="#6f6f6f">
+                                <font>
+                                    <Font size="13.0" />
+                                </font>
+                            </Label>
+                        </children>
+                    </VBox>
+                    <VBox layoutX="451.0" layoutY="30.0" prefHeight="200.0" prefWidth="190.0">
+                        <children>
+                            <Pane prefHeight="130.0" prefWidth="190.0" style="-fx-background-color: #A7D1B1; -fx-background-radius: 10;" />
+                            <Label prefHeight="31.0" prefWidth="150.0" text="Variavel Four Name">
+                                <font>
+                                    <Font name="System Bold" size="16.0" />
+                                </font>
+                                <VBox.margin>
+                                    <Insets top="20.0" />
+                                </VBox.margin>
+                            </Label>
+                            <Label layoutX="10.0" layoutY="140.0" text="henrique.gouveia@gmail.com" textFill="#6f6f6f">
+                                <font>
+                                    <Font size="13.0" />
+                                </font>
+                            </Label>
+                        </children>
+                    </VBox>
+                    <VBox layoutX="661.0" layoutY="30.0" prefHeight="200.0" prefWidth="190.0">
+                        <children>
+                            <Pane prefHeight="130.0" prefWidth="190.0" style="-fx-background-color: #FF6C30; -fx-background-radius: 10;" />
+                            <Label prefHeight="31.0" prefWidth="150.0" text="Variavel Five Name">
+                                <font>
+                                    <Font name="System Bold" size="16.0" />
+                                </font>
+                                <VBox.margin>
+                                    <Insets top="20.0" />
+                                </VBox.margin>
+                            </Label>
+                            <Label layoutX="10.0" layoutY="140.0" text="exemplo.extra@gmail.com" textFill="#6f6f6f">
+                                <font>
+                                    <Font size="13.0" />
+                                </font>
+                            </Label>
+                        </children>
+                    </VBox>
+                </children>
+                <padding>
+                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                </padding>
+            </HBox>
+        </children>
+    </VBox>
+    <HBox id="homeView-sub2" prefHeight="170.0" prefWidth="200.0" spacing="20.0">
+        <children>
+            <VBox prefHeight="200.0" prefWidth="490.0" styleClass="card" stylesheets="@style.css">
+                <children>
+                    <Label prefHeight="26.0" prefWidth="187.0" text="VARIAVEL">
+                        <font>
+                            <Font size="16.0" />
+                        </font>
+                    </Label>
+                    <HBox alignment="CENTER_LEFT" prefHeight="36.0" prefWidth="470.0">
+                        <VBox.margin>
+                            <Insets top="10.0" />
+                        </VBox.margin>
+                        <children>
+                            <Label prefHeight="26.0" prefWidth="86.0" text="Paid">
+                                <font>
+                                    <Font size="16.0" />
+                                </font>
+                            </Label>
+                            <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                            <Label prefHeight="26.0" prefWidth="76.0" text="R$314,94">
+                                <font>
+                                    <Font name="System Bold" size="16.0" />
+                                </font>
+                            </Label>
+                        </children>
+                    </HBox>
+                    <HBox alignment="CENTER_LEFT" prefHeight="36.0" prefWidth="470.0">
+                        <children>
+                            <Label prefHeight="26.0" prefWidth="86.0" text="UnPaid">
+                                <font>
+                                    <Font size="16.0" />
+                                </font>
+                            </Label>
+                            <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                            <Label prefHeight="26.0" prefWidth="76.0" text="R$128,90">
+                                <font>
+                                    <Font name="System Bold" size="16.0" />
+                                </font>
+                            </Label>
+                        </children>
+                    </HBox>
+                    <HBox alignment="CENTER_LEFT" prefHeight="36.0" prefWidth="470.0">
+                        <children>
+                            <Label prefHeight="26.0" prefWidth="86.0" text="Overdue">
+                                <font>
+                                    <Font size="16.0" />
+                                </font>
+                            </Label>
+                            <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                            <Label prefHeight="26.0" prefWidth="76.0" text="R$299,10">
+                                <font>
+                                    <Font name="System Bold" size="16.0" />
+                                </font>
+                            </Label>
+                        </children>
+                    </HBox>
+                </children>
+                <padding>
+                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                </padding>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="490.0" styleClass="card" stylesheets="@style.css">
+                <children>
+                    <Label prefHeight="26.0" prefWidth="187.0" text="VARIAVEL">
+                        <font>
+                            <Font size="16.0" />
+                        </font>
+                    </Label>
+                    <HBox alignment="CENTER_LEFT" prefHeight="36.0" prefWidth="470.0">
+                        <VBox.margin>
+                            <Insets top="10.0" />
+                        </VBox.margin>
+                        <children>
+                            <Label prefHeight="26.0" prefWidth="86.0" text="Discorver">
+                                <font>
+                                    <Font size="16.0" />
+                                </font>
+                            </Label>
+                            <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                            <Label prefHeight="26.0" prefWidth="111.0" text="30/10 - 15/11">
+                                <font>
+                                    <Font name="System Bold" size="16.0" />
+                                </font>
+                            </Label>
+                        </children>
+                    </HBox>
+                    <HBox alignment="CENTER_LEFT" prefHeight="36.0" prefWidth="470.0">
+                        <children>
+                            <Label prefHeight="26.0" prefWidth="86.0" text="Marketing">
+                                <font>
+                                    <Font size="16.0" />
+                                </font>
+                            </Label>
+                            <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                            <Label prefHeight="26.0" prefWidth="110.0" text="07/11 - 12/12">
+                                <font>
+                                    <Font name="System Bold" size="16.0" />
+                                </font>
+                            </Label>
+                        </children>
+                    </HBox>
+                    <HBox alignment="CENTER_LEFT" prefHeight="36.0" prefWidth="470.0">
+                        <children>
+                            <Label prefHeight="26.0" prefWidth="86.0" text="Design">
+                                <font>
+                                    <Font size="16.0" />
+                                </font>
+                            </Label>
+                            <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                            <Label prefHeight="26.0" prefWidth="109.0" text="15/01 - 20/01">
+                                <font>
+                                    <Font name="System Bold" size="16.0" />
+                                </font>
+                            </Label>
+                        </children>
+                    </HBox>
+                </children>
+                <padding>
+                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                </padding>
+            </VBox>
+        </children>
+    </HBox>
+</VBox>
