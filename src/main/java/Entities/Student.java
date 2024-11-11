@@ -4,7 +4,7 @@ public class Student {
     private String name;
     private String phone;
     private String imgSrc;
-    private String dataNasc;;
+    private String dataNasc;
 
     public String getName() {
         return name;
