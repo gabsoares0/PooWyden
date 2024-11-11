@@ -1,4 +1,4 @@
 package poowyden.poowyden;
 
-public class RelatoryControllers {
+public class RelatoryController {
 }
