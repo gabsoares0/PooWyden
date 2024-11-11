@@ -1,6 +1,6 @@
-package Entidades;
+package Entities;
 
-public class Contact {
+public class Student {
     private String name;
     private String phone;
     private String imgSrc;

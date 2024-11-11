@@ -1,6 +1,6 @@
 package poowyden.poowyden;
 
-import Entidades.Contact;
+import Entities.Student;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
@@ -23,12 +23,12 @@ public class ContactItem implements Initializable {
     @FXML
     private Label statusPagamento;
 
-    public void setData(Contact contact) {
-        Image imgProfile = new Image(getClass().getResourceAsStream(contact.getImgSrc()));
+    public void setData(Student student) {
+        Image imgProfile = new Image(getClass().getResourceAsStream(student.getImgSrc()));
         img.setImage(imgProfile);
 
-        name.setText(contact.getName());
-        phone.setText(contact.getPhone());
+        name.setText(student.getName());
+        phone.setText(student.getPhone());
 
     }
 

@@ -1,6 +1,6 @@
 package poowyden.poowyden;
 
-import Entidades.Contact;
+import Entities.Student;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -20,10 +20,10 @@ public class ContactCrontroller implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         // Obtém a lista de alunos
-        List<Contact> contacts = contacts();
+        List<Student> students = contacts();
 
         // Para cada aluno na lista de contatos, carregue a interface FXML correspondente
-        for (int i = 0; i < contacts.size(); i++) {
+        for (int i = 0; i < students.size(); i++) {
             FXMLLoader fxmlLoader = new FXMLLoader();
             fxmlLoader.setLocation(getClass().getResource("/poowyden/poowyden/aluno_item.fxml"));
 
@@ -32,7 +32,7 @@ public class ContactCrontroller implements Initializable {
                 ContactItem cic = fxmlLoader.getController();
 
                 // Passa os dados do aluno para o controller do item
-                cic.setData(contacts.get(i));
+                cic.setData(students.get(i));
 
                 // Adiciona o HBox à VBox que está na tela
                 alunosLayout.getChildren().add(hbox);
@@ -42,13 +42,13 @@ public class ContactCrontroller implements Initializable {
         }
     }
 
-    private List<Contact> contacts() {
-        List<Contact> ls = new ArrayList<>();
-        Contact contact = new Contact();
+    private List<Student> contacts() {
+        List<Student> ls = new ArrayList<>();
+        Student student = new Student();
 
-        contact.setName("Igor Ariel");
-        contact.setPhone("(81)X XXXX-XXXX");
-        ls.add(contact);
+        student.setName("Igor Ariel");
+        student.setPhone("(81)X XXXX-XXXX");
+        ls.add(student);
 
 
 
