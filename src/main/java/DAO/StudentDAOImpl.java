@@ -24,9 +24,7 @@ public class StudentDAOImpl implements StudentDAO {
 
             // Confirma as colunas criadas
             ResultSet rs = stmt.executeQuery("PRAGMA table_info(students);");
-            while (rs.next()) {
-                System.out.println("Column: " + rs.getString("name") + ", Type: " + rs.getString("type"));
-            }
+
         } catch (SQLException e){
             e.printStackTrace();
         }
@@ -108,6 +106,26 @@ public class StudentDAOImpl implements StudentDAO {
 
     @Override
     public List<Student> findAll() {
-        return List.of();
+        List<Student> students = new ArrayList<>();
+        String sql = "SELECT * FROM students";
+
+        try(Connection conn = DriverManager.getConnection(URL);
+        Statement stmt = conn.createStatement();
+        ResultSet rs = stmt.executeQuery(sql)) {
+            while(rs.next()){
+                Student student = new Student();
+                student.setId(rs.getInt("id"));
+                student.setName(rs.getString("name"));
+                student.setPhone(rs.getString("phone"));
+                student.setImgSrc(rs.getString("imgSrc"));
+                student.setDataNasc(rs.getString("dataNasc"));
+                students.add(student);
+            }
+
+        }catch(SQLException e){
+            e.printStackTrace();
+            System.err.println("Erro ao buscar estudantes: " + e.getMessage());
+        }
+        return students;
     }
 }
