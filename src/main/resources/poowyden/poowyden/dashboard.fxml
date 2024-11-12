@@ -41,7 +41,7 @@
                         <Font size="16.0" />
                      </font>
                      <padding>
-                        <Insets right="20.0" />
+
                      </padding>
                   </Button>
                </children>
@@ -142,9 +142,13 @@
          <children>
             <VBox prefHeight="200.0" prefWidth="100.0" spacing="30.0" styleClass="primary-color" stylesheets="@style.css" VBox.vgrow="ALWAYS">
                <children>
+
+
                   <!-- home.fxml -->
                   <!-- VBox fx:id="homeViewContainer" funciona aqui como um placeholder, e vai carregar, a depender do botao selecionado, o home.fxml, o students.fxml, etc -->
                    <VBox fx:id="homeViewContainer" />
+
+
                </children>
                <padding>
                   <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
