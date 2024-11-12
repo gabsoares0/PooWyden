@@ -22,7 +22,7 @@
             <Font name="System Bold" size="19.0" />
          </font>
       </Label>
-      <TextField layoutX="140.0" layoutY="212.0" prefHeight="39.0" prefWidth="713.0" promptText="Digite o nome do aluno...">
+      <TextField fx:id="nameField" layoutX="140.0" layoutY="212.0" prefHeight="39.0" prefWidth="713.0" promptText="Digite o nome do aluno...">
          <font>
             <Font size="17.0" />
          </font>
@@ -32,30 +32,41 @@
             <Font name="System Bold" size="19.0" />
          </font>
       </Label>
-      <TextField layoutX="139.0" layoutY="302.0" prefHeight="39.0" prefWidth="713.0" promptText="WhatsApp do aluno...">
+      <TextField fx:id="phoneField" layoutX="139.0" layoutY="302.0" prefHeight="39.0" prefWidth="713.0" promptText="WhatsApp do aluno...">
          <font>
             <Font size="17.0" />
          </font>
       </TextField>
       <Label layoutX="139.0" layoutY="361.0" text="Data de Nascimento:">
+
          <font>
             <Font name="System Bold" size="19.0" />
          </font>
       </Label>
-      <TextField layoutX="139.0" layoutY="393.0" prefHeight="39.0" prefWidth="713.0" promptText="Ex: 23/11/2005">
+      <TextField fx:id="dateOfBirthField" layoutX="139.0" layoutY="393.0" prefHeight="39.0" prefWidth="713.0" promptText="Ex: 23/11/2005">
          <font>
             <Font size="17.0" />
          </font>
       </TextField>
-      <Button fx:id="Cadastrar" layoutX="299.0" layoutY="506.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="408.0" styleClass="card3-matricular" stylesheets="@style.css" text="Cadastrar" textFill="WHITE" onAction="#cadastrarAluno">
+      <Button fx:id="Register" layoutX="292.0" layoutY="558.0" mnemonicParsing="false" onAction="#cadastrarAluno" prefHeight="47.0" prefWidth="408.0" styleClass="card3-matricular" stylesheets="@style.css" text="Cadastrar" textFill="WHITE">
          <font>
             <Font name="System Bold" size="28.0" />
          </font>
       </Button>
-      <Button fx:id="Cancelar" layoutX="299.0" layoutY="581.0" mnemonicParsing="false" onAction="#cancelarCadastro" prefHeight="47.0" prefWidth="408.0" styleClass="card2" stylesheets="@style.css" text="Cancelar" textFill="WHITE">
+      <Button fx:id="Cancel" layoutX="293.0" layoutY="643.0" mnemonicParsing="false" onAction="#cancelarCadastro" prefHeight="47.0" prefWidth="408.0" styleClass="card2" stylesheets="@style.css" text="Cancelar" textFill="WHITE">
          <font>
             <Font name="System Bold" size="28.0" />
          </font>
       </Button>
+      <Label layoutX="139.0" layoutY="453.0" text="Foto (Opcional):">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="photoField" layoutX="139.0" layoutY="488.0" prefHeight="39.0" prefWidth="713.0" promptText="Ex: 23/11/2005">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
    </children>
 </AnchorPane>
