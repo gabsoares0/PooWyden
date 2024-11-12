@@ -5,20 +5,28 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class StudentDAOImpl implements StudentDAO {
-    private static final String URL = "jdbc:mysql://localhost:3306/student";
+    private static final String URL = "jdbc:sqlite:db_test.db";
 
     public StudentDAOImpl(){
         try(Connection conn = DriverManager.getConnection(URL)){
+            Statement stmt = conn.createStatement();
+
             String createTableSQL = """
                     CREATE TABLE IF NOT EXISTS students(
                         id INTEGER PRIMARY KEY AUTOINCREMENT,
-                        name TEXT NOT NULL;
+                        name TEXT NOT NULL,
                         phone TEXT,
                         imgSrc TEXT,
                         dataNasc TEXT
                     );
                     """;
-            Statement stmt = conn.createStatement();
+            stmt.executeUpdate(createTableSQL);
+
+            // Confirma as colunas criadas
+            ResultSet rs = stmt.executeQuery("PRAGMA table_info(students);");
+            while (rs.next()) {
+                System.out.println("Column: " + rs.getString("name") + ", Type: " + rs.getString("type"));
+            }
         } catch (SQLException e){
             e.printStackTrace();
         }
@@ -30,16 +38,12 @@ public class StudentDAOImpl implements StudentDAO {
         try (Connection conn = DriverManager.getConnection(URL);
              PreparedStatement pstmt = conn.prepareStatement(sql)) {
 
-            //Define os valores nos placeholders (?) da instrucao SQL
             pstmt.setString(1, student.getName());
             pstmt.setString(2, student.getPhone());
             pstmt.setString(3, student.getImgSrc());
             pstmt.setString(4, student.getDataNasc());
 
-            //Insere
             pstmt.executeUpdate();
-
-            System.out.println("Estudante adicionado com sucesso");
 
         } catch (SQLException e){
             e.printStackTrace();
@@ -52,7 +56,7 @@ public class StudentDAOImpl implements StudentDAO {
     public void update(Student student) {
         String sql = "UPDATE students SET name = ?, phone = ?, imgSrc = ?, dataNasc = ? WHERE id = ?";
         try(Connection conn = DriverManager.getConnection(URL);
-        PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            PreparedStatement pstmt = conn.prepareStatement(sql)) {
             pstmt.setString(1, student.getName());
             pstmt.setString(2, student.getPhone());
             pstmt.setString(3, student.getImgSrc());
@@ -63,14 +67,13 @@ public class StudentDAOImpl implements StudentDAO {
         }catch (SQLException e){
             e.printStackTrace();
         }
-
     }
 
     @Override
     public void delete(int id) {
         String sql = "DELETE FROM students WHERE id = ?";
         try( Connection conn = DriverManager.getConnection(URL);
-        PreparedStatement pstmt = conn.prepareStatement(sql)) {
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
             pstmt.setInt(1, id);
 
             pstmt.executeUpdate();
@@ -81,10 +84,10 @@ public class StudentDAOImpl implements StudentDAO {
 
     @Override
     public Student findById(int id) {
-        String sql = "SELECT * FROM studentes WHERE id = ?";
+        String sql = "SELECT * FROM students WHERE id = ?";  // Corrigido o nome da tabela
         Student student = null;
         try( Connection conn = DriverManager.getConnection(URL);
-        PreparedStatement pstmt = conn.prepareStatement(sql)) {
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
             pstmt.setInt(1, id);
             ResultSet rs = pstmt.executeQuery();
 
