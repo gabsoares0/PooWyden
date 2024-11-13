@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="755.2" prefWidth="1001.6" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" styleClass="background-faixaPlanos" stylesheets="@style.css">
+               <children>
+                  <Label styleClass="color-textFaixaPlans" stylesheets="@style.css" text="MUSCULAÇÃO">
+                     <font>
+                        <Font name="System Bold" size="45.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Pane prefHeight="100.0" prefWidth="534.0" />
+                  <Button mnemonicParsing="false" styleClass="transparent" stylesheets="@style.css" text="X">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="27.0" />
+                     </font>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <Label text="Sobre">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+            <TextFlow prefHeight="92.0" prefWidth="941.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="A musculação é uma atividade física que pode ser realizada em diferentes intensidades e que faz com que os músculos se contraiam contra uma resistência externa. Geralmente, essa resistência é provocada pelos aparelhos e pelo levantamento de pesos na academia." wrappingWidth="75.47005271911621">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin>
+            </TextFlow>
+            <Label prefHeight="32.0" prefWidth="354.0" text="Para o que serve a musculação? ">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </Label>
+            <TextFlow prefHeight="92.0" prefWidth="941.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="A musculação promove a tonificação dos músculos. Portanto, eles ficam mais fortes e rígidos, sem a flacidez que aparece quando eles não são desenvolvidos. Além de demonstrar o ganho de força, um corpo tonificado também combate outras consequências indesejadas do ganho de peso, como as celulites, por exemplo." wrappingWidth="75.47005271911621">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin>
+            </TextFlow>
+            <HBox alignment="CENTER" prefHeight="280.0" prefWidth="981.0" spacing="10.0">
+               <padding>
+                  <Insets left="20.0" right="20.0" />
+               </padding>
+               <children>
+                  <ImageView fitHeight="250.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@imgs/gym3.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="250.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@imgs/gym1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="250.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@imgs/gym2.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="25.0" />
+         </padding>
+      </VBox>
+   </center>
+</BorderPane>

@@ -26,6 +26,11 @@
     -fx-effect: null;
 }
 
+.collor-TextRegistrarStudant{
+    -fx-text-fill: #FFF;
+}
+
+
 .menu-item:hover {
     -fx-background-color: green; /* Fundo verde ao passar o mouse */
     -fx-text-fill: white; /* Cor do texto ao passar o mouse */
@@ -75,6 +80,11 @@
 .background-faixaPlanos{
     -fx-background-color: #FCCD2A;
     -fx-background-radius: 10;
+}
+
+.background-modalidades{
+    -fx-background-color: #FCCD2A;
+    -fx-background-radius: 0;
 }
 
 .color-textFaixaPlans{
