@@ -41,9 +41,24 @@ public class DashboardController{
         loadView("professors.fxml");
     }
 
-    public void loadPlansView(){
-        loadView("plans.fxml");
+    public void loadPlansView() {
+        try {
+            FXMLLoader loader = new FXMLLoader(Objects.requireNonNull(getClass().getResource("plans.fxml")));
+            Node node = loader.load();
+
+            // Obtém o controlador do plans.fxml e passa o DashboardController para ele
+            PlansController planosController = loader.getController();
+            planosController.setDashboardController(this);
+
+            // Limpa o conteúdo atual e carrega o novo conteúdo no VBox
+            homeViewContainer.getChildren().clear();
+            homeViewContainer.getChildren().add(node);
+        } catch (IOException e) {
+            System.err.println("Erro ao carregar o arquivo plans.fxml");
+            e.printStackTrace();
+        }
     }
+
 
     public void loadFinancesView(){
         loadView("finance.fxml");

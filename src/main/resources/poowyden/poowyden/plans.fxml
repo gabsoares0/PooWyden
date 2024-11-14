@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="755.2" prefWidth="1001.6" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="755.2" prefWidth="1001.6" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="poowyden.poowyden.PlansController">
    <center>
       <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
          <children>
@@ -143,7 +143,7 @@
                               <Insets left="25.0" />
                            </padding>
                         </VBox>
-                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="160.0" styleClass="background-buttonPlan" stylesheets="@style.css" text="Mais detalhes">
+                        <Button fx:id="verMaisDetalhesJudo" mnemonicParsing="false" onAction="#initialize" prefHeight="40.0" prefWidth="160.0" styleClass="background-buttonPlan" stylesheets="@style.css" text="Mais detalhes">
                            <VBox.margin>
                               <Insets bottom="30.0" />
                            </VBox.margin>
@@ -259,7 +259,7 @@
                               <Insets left="25.0" />
                            </padding>
                         </VBox>
-                        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="190.0" styleClass="background-buttonPlan" stylesheets="@style.css" text="Mais detalhes">
+                        <Button fx:id="verMaisDetalhesMusculacao" mnemonicParsing="false" onAction="#initialize" prefHeight="50.0" prefWidth="190.0" styleClass="background-buttonPlan" stylesheets="@style.css" text="Mais detalhes">
                            <VBox.margin>
                               <Insets bottom="30.0" />
                            </VBox.margin>
@@ -375,7 +375,7 @@
                               <Insets left="25.0" />
                            </padding>
                         </VBox>
-                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="160.0" styleClass="background-buttonPlan" stylesheets="@style.css" text="Mais detalhes">
+                        <Button fx:id="verMaisDetalhesZumba" mnemonicParsing="false" onAction="#initialize" prefHeight="40.0" prefWidth="160.0" styleClass="background-buttonPlan" stylesheets="@style.css" text="Mais detalhes">
                            <VBox.margin>
                               <Insets bottom="30.0" />
                            </VBox.margin>
