@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox id="homeView-mainContainer" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="poowyden.poowyden.HomeController">
+<VBox id="homeView-mainContainer" prefHeight="755.2" prefWidth="1001.6" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="poowyden.poowyden.HomeController">
     <VBox id="homeView-sub1" prefHeight="290.0" prefWidth="100.0" spacing="20.0">
         <children>
             <Label text="Matriculados">
@@ -17,11 +17,11 @@
                     <Font name="System Bold" size="16.0" />
                 </font>
             </Label>
-         <ScrollPane hbarPolicy="ALWAYS" vbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0">
+         <ScrollPane hbarPolicy="ALWAYS" prefHeight="200.0" prefWidth="200.0" vbarPolicy="NEVER">
            <content>
              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
                   <children>
-                        <HBox fx:id="studentsList" prefHeight="270.0" prefWidth="200.0" spacing="20.0" >
+                        <HBox fx:id="studentsList" prefHeight="186.0" spacing="20.0">
                             <!-- os elementos instanciados da classe-entidade Student aparecerao numa lista  / / / styleClass="card" stylesheets="@style.css" -->
                         </HBox>
                   </children>
