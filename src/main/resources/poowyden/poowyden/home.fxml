@@ -3,7 +3,6 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
-<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
@@ -17,16 +16,10 @@
                     <Font name="System Bold" size="16.0" />
                 </font>
             </Label>
-         <ScrollPane hbarPolicy="ALWAYS" prefHeight="200.0" prefWidth="200.0" vbarPolicy="NEVER">
-           <content>
-             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
-                  <children>
-                        <HBox fx:id="studentsList" prefHeight="186.0" spacing="20.0">
-                            <!-- os elementos instanciados da classe-entidade Student aparecerao numa lista  / / / styleClass="card" stylesheets="@style.css" -->
-                        </HBox>
-                  </children>
-               </AnchorPane>
-           </content>
+         <ScrollPane hbarPolicy="ALWAYS" prefHeight="200.0" vbarPolicy="ALWAYS">
+            <content>
+               <HBox fx:id="studentsList" prefHeight="186.0" spacing="20.0" />
+            </content>
          </ScrollPane>
         </children>
     </VBox>
