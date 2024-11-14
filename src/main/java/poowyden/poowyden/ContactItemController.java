@@ -10,7 +10,7 @@ import javafx.scene.image.ImageView;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class ContactItem implements Initializable {
+public class ContactItemController implements Initializable {
     @FXML
     private Label phone;
 

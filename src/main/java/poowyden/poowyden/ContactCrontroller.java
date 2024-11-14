@@ -29,7 +29,7 @@ public class ContactCrontroller implements Initializable {
 
             try {
                 HBox hbox = fxmlLoader.load();
-                ContactItem cic = fxmlLoader.getController();
+                ContactItemController cic = fxmlLoader.getController();
 
                 // Passa os dados do aluno para o controller do item
                 cic.setData(students.get(i));
