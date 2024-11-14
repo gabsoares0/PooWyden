@@ -2,6 +2,21 @@
     -fx-background-color: '#fff';
 }
 
+.login-background{
+    -fx-background-color: '#31511E';
+}
+
+.login-Card{
+    -fx-background-color: '#FFF';
+    -fx-background-radius: 05;
+    -fx-effect: dropShadow(three-pass-box, rgba(0,0,0,0.1),10.0 0 0 10.0);
+}
+
+.login-UserCard{
+    -fx-background-radius: 10;
+    -fx-border-color: '#B7B7B7';
+}
+
 .greenclaro-background{
     -fx-background-color: '#FFFBE6';
 }
@@ -100,4 +115,9 @@
 .background-buttonPlan{
     -fx-background-color: #FCCD2A;
     -fx-background-radius: 50;
+}
+.background-buttonLogin{
+    -fx-background-color: #31511E;
+    -fx-background-radius: 20;
+    -fx-text-fill: '#FFF';
 }
