@@ -64,7 +64,7 @@
                   <Insets left="20.0" right="20.0" />
                </VBox.margin>
             </TextFlow>
-            <Label prefHeight="32.0" prefWidth="354.0" text="O que o judô ensina?">
+            <Label prefHeight="32.0" prefWidth="354.0" text="O que o zumba ensina?">
                <font>
                   <Font name="System Bold" size="22.0" />
                </font>
