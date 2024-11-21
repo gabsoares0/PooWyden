@@ -9,7 +9,6 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="755.2" prefWidth="1001.6" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <center>
       <VBox prefHeight="200.0" prefWidth="100.0" spacing="30.0" BorderPane.alignment="CENTER">
@@ -25,21 +24,21 @@
                      <children>
                         <VBox prefHeight="200.0" prefWidth="240.0" styleClass="card3-matricular" stylesheets="@style.css">
                            <children>
-                              <Label prefHeight="80.0" prefWidth="190.0" text="Registrar+" textFill="WHITE">
+                              <Label prefHeight="71.0" prefWidth="185.0" text="Registrar+" textFill="WHITE">
                                  <font>
                                     <Font name="System Bold" size="30.0" />
                                  </font>
                               </Label>
                            </children>
                            <padding>
-                              <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                              <Insets bottom="15.0" left="20.0" right="15.0" top="15.0" />
                            </padding>
                         </VBox>
                         <VBox prefHeight="200.0" prefWidth="240.0" styleClass="card" stylesheets="@style.css">
                            <children>
                               <HBox alignment="CENTER" prefHeight="43.0" prefWidth="240.0">
                                  <children>
-                                    <Label prefHeight="26.0" prefWidth="299.0" text="Pagos">
+                                    <Label prefHeight="26.0" prefWidth="299.0" text="Total de professores">
                                        <font>
                                           <Font size="16.0" />
                                        </font>
@@ -58,16 +57,16 @@
                         </VBox>
                         <VBox prefHeight="200.0" prefWidth="240.0" styleClass="card4-pendentes" stylesheets="@style.css">
                            <children>
-                              <HBox alignment="CENTER" prefHeight="43.0" prefWidth="240.0">
+                              <HBox alignment="CENTER" prefHeight="7.0" prefWidth="190.0">
                                  <children>
-                                    <Label prefHeight="26.0" prefWidth="187.0" text="Pendentes" textFill="WHITE">
+                                    <Label prefHeight="26.0" prefWidth="187.0" text="Quadro de horários" textFill="WHITE">
                                        <font>
                                           <Font size="16.0" />
                                        </font>
                                     </Label>
                                  </children>
                               </HBox>
-                              <Label prefHeight="56.0" prefWidth="246.0" text="46" textFill="WHITE">
+                              <Label prefHeight="34.0" prefWidth="190.0" text="Horários" textFill="WHITE">
                                  <font>
                                     <Font name="System Bold" size="30.0" />
                                  </font>
@@ -79,9 +78,9 @@
                         </VBox>
                         <VBox prefHeight="200.0" prefWidth="240.0" styleClass="card2" stylesheets="@style.css">
                            <children>
-                              <Label prefHeight="74.0" prefWidth="191.0" text="Excluir aluno" textFill="WHITE">
+                              <Label prefHeight="74.0" prefWidth="191.0" text="Excluir professor" textFill="WHITE">
                                  <font>
-                                    <Font name="System Bold" size="30.0" />
+                                    <Font name="System Bold" size="23.0" />
                                  </font>
                               </Label>
                            </children>
