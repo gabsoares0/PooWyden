@@ -35,18 +35,17 @@ public class RegisterStudentController {
 
     //Método para cancelar o cadastro e voltar para a tela anterior
     @FXML
+    //Abre o dashboard já carregado com a aba de alunos
     private void cancelarCadastro() {
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("dashboard.fxml")); // Troque "dashboard.fxml" pelo nome correto da sua tela de alunos
-            Scene novaCena = new Scene(loader.load());
-            Stage stage = (Stage) Cancel.getScene().getWindow();
-            stage.setScene(novaCena);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        // Obtém o Stage atual (onde o botão "Cancelar" está)
+        Stage currentStage = (Stage) Cancel.getScene().getWindow();
+
+        // Usa a classe Navigation para abrir o dashboard no mesmo Stage, EVITANDO ASSIM ABRIR UMA OUTRA JANELA
+        Navigation navigation = new Navigation();
+        navigation.openDashboard(currentStage, "students");
     }
 
-    // Método para cadastrar o aluno
+    //Método para cadastrar o aluno
     @FXML
     private void cadastrarAluno() {
         //Cadastro de um novo aluno pelo metodo save()
