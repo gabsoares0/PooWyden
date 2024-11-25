@@ -42,7 +42,7 @@ public class RegisterStudentController {
 
         // Usa a classe Navigation para abrir o dashboard no mesmo Stage, EVITANDO ASSIM ABRIR UMA OUTRA JANELA
         Navigation navigation = new Navigation();
-        navigation.openDashboard(currentStage, "students");
+        navigation.openDashboard(currentStage, "students.fxml");
     }
 
     //Método para cadastrar o aluno
