@@ -15,7 +15,7 @@ public class ProfessorsController {
     @FXML
     private Button Register;
 
-    @FXMLgit add
+    @FXML
     void cadastrarAluno() {
         // Implementação do método
     }
