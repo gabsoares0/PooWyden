@@ -10,8 +10,14 @@ import javafx.fxml.FXMLLoader;
 
 public class DashboardController{
 
+    private String initialView = "home";
+    public void setInitialView(String view){
+        this.initialView = view;
+    }
+
     @FXML
     private VBox homeViewContainer; //Conteiner onde o FXML da tela selecionada no Dashboard será carregada
+
 
     //Metodo que limpa o conteudo atual do Vbox homeViewContainer e o susbstitui por outros arquivos FXML
     public void loadView(String fxmlFile){
@@ -29,6 +35,8 @@ public class DashboardController{
             e.printStackTrace();
         }
     }
+
+
     public void loadHomeView(){
         loadView("home.fxml");
     }
@@ -72,5 +80,28 @@ public class DashboardController{
         loadView("relatory.fxml");
     }
 
+    @FXML
+    public void initialize(){
+        switch (initialView){
+            case "students":
+                loadStudentsView();
+                break;
+            case "professors":
+                loadProfessorsView();
+                break;
+            case "plans":
+                loadPlansView();
+                break;
+            case "finances":
+                loadFinancesView();
+                break;
+            case "warnings":
+                loadWarningsView();
+                break;
+            default:
+                loadHomeView();
+                break;
+        }
+    }
 
 }
