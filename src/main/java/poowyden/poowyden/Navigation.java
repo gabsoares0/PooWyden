@@ -14,11 +14,16 @@ public class Navigation {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("dashboard.fxml"));
             Scene scene = new Scene(loader.load());
 
-            // Obtém o controlador e configura a visão inicial
+            // Obtém o controlador associado ao dashboard.fxml
             DashboardController controller = loader.getController();
+
+            // Define a visão inicial antes de exibir a cena
             controller.setInitialView(initialView);
 
-            // Configura o Stage existente com a nova cena
+            // Configura a visão inicial explicitamente
+            controller.setupInitialView();
+
+            // Configura o Stage com a nova cena e exibe
             currentStage.setScene(scene);
             currentStage.setTitle("Dashboard");
             currentStage.show();
@@ -28,4 +33,5 @@ public class Navigation {
             e.printStackTrace();
         }
     }
+
 }
