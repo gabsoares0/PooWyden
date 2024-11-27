@@ -1,6 +1,8 @@
 package poowyden.poowyden;
 
+import Entities.Student;
 import DAO.StudentDAO;
+import DAO.StudentDAOImpl;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -8,8 +10,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import java.io.IOException;
-import DAO.StudentDAOImpl;
-import Entities.Student;
 
 public class RegisterStudentController {
 
