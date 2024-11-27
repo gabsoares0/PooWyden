@@ -1,4 +1,4 @@
-package java;
+package poowyden.poowyden;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -12,18 +12,15 @@ public class DatabaseCleaner {
         try (Connection conn = DriverManager.getConnection(URL);
              Statement stmt = conn.createStatement()) {
 
-            // Script SQL para limpar as tabelas
+            // Script SQL para apagar as tabelas
             String sql = """
-                    DELETE FROM students;
-                    DELETE FROM professors;
-                    DELETE FROM payments;
-                    DELETE FROM sqlite_sequence WHERE name='students';
-                    DELETE FROM sqlite_sequence WHERE name='professors';
-                    DELETE FROM sqlite_sequence WHERE name='payments';
+                    DROP TABLE IF EXISTS students;
+                    DROP TABLE IF EXISTS professors;
+                    DROP TABLE IF EXISTS professor;
                     """;
 
             stmt.executeUpdate(sql);
-            System.out.println("Banco de dados limpo com sucesso!");
+            System.out.println("Tabelas apagadas com sucesso!");
 
         } catch (Exception e) {
             e.printStackTrace();
