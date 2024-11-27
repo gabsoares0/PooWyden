@@ -4,6 +4,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
@@ -110,25 +111,17 @@
                            <children>
                               <HBox alignment="CENTER_LEFT" prefHeight="55.0" prefWidth="914.0" spacing="10.0" styleClass="light-gray-background" stylesheets="@style.css">
                                  <children>
-                                    <Label alignment="CENTER" prefHeight="23.0" prefWidth="38.0" text="A" textFill="#575757">
-                                       <font>
-                                          <Font name="Corbel Bold" size="20.0" />
-                                       </font>
-                                       <HBox.margin>
-                                          <Insets left="10.0" />
-                                       </HBox.margin>
-                                    </Label>
-                                    <Label prefHeight="23.0" prefWidth="164.0" text="Nome" textFill="#575757">
+                                    <Label prefHeight="23.0" prefWidth="150.0" text="Nome" textFill="#575757">
                                        <font>
                                           <Font name="Corbel Bold" size="20.0" />
                                        </font>
                                     </Label>
-                                    <Label prefHeight="23.0" prefWidth="166.0" text="Contato" textFill="#575757">
+                                    <Label prefHeight="23.0" prefWidth="80.0" text="Contato" textFill="#575757">
                                        <font>
                                           <Font name="Corbel Bold" size="20.0" />
                                        </font>
                                     </Label>
-                                    <Label prefHeight="23.0" prefWidth="268.0" text="Status" textFill="#575757">
+                                    <Label prefHeight="23.0" prefWidth="235.0" text="Status" textFill="#575757">
                                        <font>
                                           <Font name="Corbel Bold" size="20.0" />
                                        </font>
@@ -140,6 +133,7 @@
                                     </Label>
                                  </children>
                               </HBox>
+                              <ListView fx:id="studentsListView" prefHeight="200.0" prefWidth="861.0" />
                            </children>
                         </VBox>
                      </content>
