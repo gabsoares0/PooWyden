@@ -1,5 +1,8 @@
 package poowyden.poowyden;
 
+import Entities.Professor;
+import DAO.ProfessorDAO;
+import DAO.ProfessorDAOImpl;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -40,9 +43,34 @@ public class RegisterProfessorController {
     @FXML
     private TextField streetNumberField;
 
-    @FXML
-    void cadastrarAluno(ActionEvent event) {
+    private final ProfessorDAO professorDAO = new ProfessorDAOImpl();
 
+    @FXML
+    void cadastrarProfessor(ActionEvent event) {
+        String name = nameField.getText();
+        String phone = phoneField.getText();
+        String dateOfBirth = dateOfBirthField.getText();
+        String cpf = cpfField.getText();
+        String street = streetField.getText();
+        String streetNumber = streetNumberField.getText();
+        String city = cityField.getText();
+        String state = stateField.getText();
+        String photo = photoField.getText();
+
+        Professor professor = new Professor();
+        professor.setName(name);
+        professor.setPhone(phone);
+        professor.setDataNasc(dateOfBirth);
+        professor.setCpf(cpf);
+        professor.setStreet(street);
+        professor.setStreet_number(streetNumber);
+        professor.setCity(city);
+        professor.setState(state);
+        professor.setImgSrc(photo);
+
+        //salva no banco de dados
+        professorDAO.save(professor);
+        System.out.println("Registro Professor cadastrado com sucesso");
     }
 
     @FXML
