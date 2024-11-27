@@ -13,7 +13,7 @@ public class ProfessorDAOImpl implements ProfessorDAO{
             Statement stmt = conn.createStatement();
 
             String createTableSQL = """
-                    CREATE TABLE IF NOT EXISTS professor(
+                    CREATE TABLE IF NOT EXISTS professors(
                         id INTEGER PRIMARY KEY AUTOINCREMENT,
                         name TEXT NOT NULL,
                         phone TEXT,
@@ -51,6 +51,8 @@ public class ProfessorDAOImpl implements ProfessorDAO{
             pstmt.setString(7, professor.getStreet_number());
             pstmt.setString(8, professor.getCity());
             pstmt.setString(9, professor.getState());
+
+            pstmt.executeUpdate();
 
         }catch(SQLException e){
             e.printStackTrace();
