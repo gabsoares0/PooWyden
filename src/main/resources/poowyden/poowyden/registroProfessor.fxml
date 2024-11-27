@@ -44,7 +44,7 @@
             <Font size="17.0" />
          </font>
       </TextField>
-      <Button fx:id="Register" layoutX="453.0" layoutY="627.0" mnemonicParsing="false" onAction="#cadastrarAluno" prefHeight="47.0" prefWidth="180.0" styleClass="card3-matricular" stylesheets="@style.css" text="Cadastrar" textFill="WHITE">
+      <Button fx:id="Register" layoutX="453.0" layoutY="627.0" mnemonicParsing="false" onAction="#cadastrarProfessor" prefHeight="47.0" prefWidth="180.0" styleClass="card3-matricular" stylesheets="@style.css" text="Cadastrar" textFill="WHITE">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
