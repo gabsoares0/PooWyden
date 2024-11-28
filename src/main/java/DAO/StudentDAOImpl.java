@@ -43,11 +43,16 @@ public class StudentDAOImpl implements StudentDAO {
 
             pstmt.executeUpdate();
 
+            //Recupera o ID gerado automaticamente pelo SQLite em 'id INTEGER PRIMARY KEY AUTOINCREMENT'
+            ResultSet rs = pstmt.getGeneratedKeys();
+            if(rs.next()){
+                student.setId(rs.getInt(1)); //Define o ID getado no objeto
+            }
+
         } catch (SQLException e){
             e.printStackTrace();
             System.err.println("Erro ao salvar estudante: " + e.getMessage());
         }
-
     }
 
     @Override
