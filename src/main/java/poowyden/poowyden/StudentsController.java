@@ -30,11 +30,14 @@ public class StudentsController {
     public StudentsController() {
         this.dao = new StudentDAOImpl();
     }
-
+    //Metodo automaticamente chamado pelo JavaFX quando o controlador é carregado
     @FXML
     public void initialize() {
+        //Cria uma observableList, uma lista especial do JavaFX que observa mudanças
         studentsList = FXCollections.observableArrayList();
+        //Liga o studentsList ao ListView
         studentsListView.setItems(studentsList);
+        //Define uma 'fábrica' de células, ou seja, nos diz COMO cada célula será criada
         studentsListView.setCellFactory(new Callback<ListView<Student>, ListCell<Student>>() {
             @Override
             public ListCell<Student> call(ListView<Student> param) {
