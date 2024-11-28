@@ -4,12 +4,11 @@ import Entities.Student;
 import DAO.StudentDAO;
 import DAO.StudentDAOImpl;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-import java.io.IOException;
+
+import Services.PaymentService;
 
 public class RegisterStudentController {
 
@@ -31,18 +30,23 @@ public class RegisterStudentController {
     @FXML
     private TextField photoField;
 
-    private final StudentDAO studentDAO = new StudentDAOImpl();
+    private final PaymentService paymentService = new PaymentService();
 
     //Método para cancelar o cadastro e voltar para a tela anterior
     @FXML
     //Abre o dashboard já carregado com a aba de alunos
     private void cancelarCadastro() {
-        // Obtém o Stage atual (onde o botão "Cancelar" está)
-        Stage currentStage = (Stage) Cancel.getScene().getWindow();
+        try{
+            // Obtém o Stage atual (onde o botão "Cancelar" está)
+            Stage currentStage = (Stage) Cancel.getScene().getWindow();
 
-        // Usa a classe Navigation para abrir o dashboard no mesmo Stage, EVITANDO ASSIM ABRIR UMA OUTRA JANELA
-        Navigation navigation = new Navigation();
-        navigation.openDashboard(currentStage, "students.fxml");
+            // Usa a classe BackToDashboard para abrir o dashboard no mesmo Stage, EVITANDO ASSIM ABRIR UMA OUTRA JANELA
+            BackToDashboard backToDashboard = new BackToDashboard();
+            backToDashboard.openDashboard(currentStage, "students.fxml");
+        }catch(Exception e) {
+            e.printStackTrace();
+            System.out.println("Erro ao cancelar cadastro de aluno");
+        }
     }
 
     //Método para cadastrar o aluno
@@ -55,24 +59,25 @@ public class RegisterStudentController {
         String photo = photoField.getText();
 
         //Futura validação de dados de entrada
-
         Student student = new Student();
         student.setName(name);
         student.setPhone(phone);
         student.setDataNasc(dateOfBirth);
         student.setImgSrc(photo);
 
-        //Salva no banco de dados
-        studentDAO.save(student);
-        System.out.println("Registro aluno cadastrado com sucesso");
+        //Salva no banco de dados e cria o registro de pagamento inicial
+        paymentService.registerNewStudent(student);
+        System.out.println("Registro aluno cadastrado com sucesso, com pagamento inicial criado");
 
         // Após o cadastro, carregar a tela de alunos (
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("dashboard.fxml"));
-            Scene novaCena = new Scene(loader.load());
-            Stage stage = (Stage) Register.getScene().getWindow(); // Pega o stage da tela atual
-            stage.setScene(novaCena);  // Altera para a tela de alunos
-        } catch (IOException e) {
+            // Obtém o Stage atual (onde o botão "Cancelar" está)
+            Stage currentStage = (Stage) Register.getScene().getWindow();
+
+            // Usa a classe BackToDashboard para abrir o dashboard no mesmo Stage, EVITANDO ASSIM ABRIR UMA OUTRA JANELA
+            BackToDashboard backToDashboard = new BackToDashboard();
+            backToDashboard.openDashboard(currentStage, "students.fxml");
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
