@@ -17,6 +17,7 @@ public class DatabaseCleaner {
                     DROP TABLE IF EXISTS students;
                     DROP TABLE IF EXISTS professors;
                     DROP TABLE IF EXISTS professor;
+                    DROP TABLE IF EXISTS payments;
                     """;
 
             stmt.executeUpdate(sql);
