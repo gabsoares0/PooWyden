@@ -4,6 +4,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
@@ -125,6 +126,7 @@
                                     </Label>
                                  </children>
                               </HBox>
+                              <ListView fx:id="professorsListView" prefHeight="200.0" prefWidth="200.0" />
                            </children>
                         </VBox>
                      </content>
