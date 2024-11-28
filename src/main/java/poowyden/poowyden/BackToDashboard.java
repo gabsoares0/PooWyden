@@ -1,3 +1,5 @@
+//Esta classe serve para voltar para o 'dashboard.fxml' já com algum dos elementos selecionados, através do argumento initialView
+
 package poowyden.poowyden;
 
 import javafx.fxml.FXMLLoader;

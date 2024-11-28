@@ -1,7 +1,6 @@
 package DAO;
 
 import Entities.Payment;
-import java.time.LocalDate;
 
 import java.sql.*;
 import java.util.List;
@@ -15,10 +14,15 @@ public class PaymentDAOImpl implements PaymentDAO {
             String createTableSQL = """
                     CREATE TABLE IF NOT EXISTS payments(
                         id INTEGER PRIMARY KEY AUTOINCREMENT,
-                        date DATE NOT NULL,
-                        amount FLOAT,
-                        type_plan TEXT,
-                        payerId int NOT NULL,
+                        payday DATE NOT NULL,
+                        amount FLOAT NOT NULL,
+                        payerId INTEGER NOT NULL,
+                        paymentMethod TEXT NOT NULL,
+                        accountId INTEGER NOT NULL,
+                        status TEXT NOT NULL,
+                        type_plan TEXT NOT NULL,
+                        expirePayDay TEXT NOT NULL,
+                        expired BOOLEAN NOT NULL
                     );
                     """;
             stmt.executeUpdate(createTableSQL);
@@ -32,14 +36,25 @@ public class PaymentDAOImpl implements PaymentDAO {
     }
     @Override
     public void save(Payment payment) {
-        String sql = "INSERT INTO payments (date, amount, type_plan, payerId) VALUES (?, ?, ?, ?)";
+        String sql = "INSERT INTO payments (payday, amount, payerId, paymentMethod, accountId, status, type_plan, expirePayDay, expired) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
         try(Connection conn = DriverManager.getConnection(URL);
         PreparedStatement pstmt = conn.prepareStatement(sql);){
 
-            pstmt.setDate(1, payment.getDate());
+            //Converte java.util.date para java.sql.Date
+            java.sql.Date sqlDatePayday = new java.sql.Date(payment.getPayDay().getTime());
+
+            //Conver java.utils.date para java.sql.Date
+            java.sql.Date sqlDateExpireDay = new java.sql.Date(payment.getExpirePayDay().getTime());
+
+            pstmt.setDate(1, sqlDatePayday);
             pstmt.setDouble(2, payment.getAmount());
-            pstmt.setString(3, payment.getType_plan());
-            pstmt.setInt(4, payment.getPayerId());
+            pstmt.setInt(3, payment.getPayerId());
+            pstmt.setString(4, payment.getPaymentMethod());
+            pstmt.setInt(5, payment.getAccountId());
+            pstmt.setString(6, payment.getStatus());
+            pstmt.setString(7, payment.getType_plan());
+            pstmt.setDate(8, sqlDateExpireDay);
+            pstmt.setBoolean(9, payment.isExpired());
 
             pstmt.executeUpdate();
 
@@ -51,13 +66,20 @@ public class PaymentDAOImpl implements PaymentDAO {
     }
     @Override
     public void update(Payment payment) {
-        String sql = "UPDATE payments SET date = ?, amount = ?, type_plan = ?, payerId = ? WHERE id = ?";
+        String sql = "UPDATE payments SET payday = ?, amount = ?, payerId = ?, payerId = ?, payment_method = ?, accounId = ?, status = ?, type_plan = ? WHERE id = ?";
         try(Connection conn = DriverManager.getConnection(URL);
             PreparedStatement pstmt = conn.prepareStatement(sql)) {
-            pstmt.setDate(1, payment.getDate());
+
+            //Converte java.util.date para java.sql.Date
+            java.sql.Date sqlDate = new java.sql.Date(payment.getPayDay().getTime());
+
+            pstmt.setDate(1, sqlDate);
             pstmt.setDouble(2, payment.getAmount());
-            pstmt.setString(3, payment.getType_plan());
-            pstmt.setInt(4, payment.getPayerId());
+            pstmt.setInt(3, payment.getPayerId());
+            pstmt.setString(4, payment.getPaymentMethod());
+            pstmt.setInt(5, payment.getAccountId());
+            pstmt.setString(6, payment.getStatus());
+            pstmt.setString(7, payment.getType_plan());
 
             pstmt.executeUpdate();
         }catch (SQLException e){
