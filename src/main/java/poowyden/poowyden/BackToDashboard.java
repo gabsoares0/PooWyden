@@ -8,7 +8,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class Navigation {
+public class BackToDashboard {
 
     public void openDashboard(Stage currentStage, String initialView) {
         try {
